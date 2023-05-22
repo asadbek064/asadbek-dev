@@ -4,7 +4,7 @@ import {
   ArrowIcon,
   TwitterIcon,
 } from 'components/icons';
-import { BsLinkedin } from 'react-icons/bs';
+import { BsLinkedin, BsEnvelopePaper } from 'react-icons/bs';
 
 import Link from 'next/link';
 
@@ -41,18 +41,6 @@ export default function AboutPage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/realAsadbek"
-            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
-          >
-            <div className="flex items-center">
-              <TwitterIcon />
-              <div className="ml-3">Twitter</div>
-            </div>
-            <ArrowIcon />
-          </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
             href="https://github.com/asadbek064"
             className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
           >
@@ -71,6 +59,18 @@ export default function AboutPage() {
             <div className="flex items-center">
               <BsLinkedin />
               <div className="ml-3">LinkedIn</div>
+            </div>
+            <ArrowIcon />
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="/ASADBEK_KARIMOV_Resume.pdf"
+            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+          >
+            <div className="flex items-center">
+              <BsEnvelopePaper />
+              <div className="ml-3">View Resume</div>
             </div>
             <ArrowIcon />
           </a>

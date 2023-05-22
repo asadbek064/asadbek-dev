@@ -8,6 +8,7 @@
     "setup": "node ./lib/setup.mjs"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.14",
     "@octokit/rest": "^19.0.7",
     "@planetscale/database": "^1.5.0",
     "@vercel/analytics": "^0.1.11",
