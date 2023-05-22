@@ -4,10 +4,13 @@ import {
   ArrowIcon,
   TwitterIcon,
 } from 'components/icons';
+import { BsLinkedin } from 'react-icons/bs';
+
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'VP of Developer Experience at Vercel.',
+  description: 'Full-stack developer Experience at Pieshares inc .',
 };
 
 export default function AboutPage() {
@@ -19,19 +22,16 @@ export default function AboutPage() {
       </p>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
         <p>
-          I'm currently the <b>Owner of AnimetTV</b>, where I
-          develope animet.site where i try to create a unique spot for everything Anime medium. I focus on{' '}
-          <b>create new unique social features and tracker</b> for the anime communities.
+          I'm the creator of <Link href="https://animet.site">AnimetTV</Link> where I try to create a unique spot for everything Anime medium.
         </p>
         <hr />
         <p>
           I <b>love</b> building for the web. From something as simple as a
-          single HTML file – all the way to large Next.js applications. The web
-          is incredible. Anyone can become a developer, or creator – and
-          no one has to ask for permission. You can just build.
+          utility extensions – all the way to large Next.js applications. The web
+          is incredible.
         </p>
         <p className="mb-8">
-          Outside of AnimetTV, I'm <b>college student</b> attending <b>Queens College University</b> majoring in Computer Science.
+          Outside of AnimetTV, I'm college student attending <Link href="https://www.qc.cuny.edu/">Queens College University</Link> majoring in <b>Computer Science.</b>
           I have coded in many languages but perfer Python, TypeScript and C++.
           I have a strong interest in <b>Data Science</b> although I program a lot of scrappers and web apps in my free time.
         </p>
@@ -39,7 +39,7 @@ export default function AboutPage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://twitter.com/realAsadbek"
             className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
           >
             <div className="flex items-center">
@@ -51,12 +51,24 @@ export default function AboutPage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/leerob"
+            href="https://github.com/asadbek064"
             className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
           >
             <div className="flex items-center">
               <GitHubIcon />
               <div className="ml-3">GitHub</div>
+            </div>
+            <ArrowIcon />
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/asadbekkarimov/"
+            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+          >
+            <div className="flex items-center">
+              <BsLinkedin />
+              <div className="ml-3">LinkedIn</div>
             </div>
             <ArrowIcon />
           </a>

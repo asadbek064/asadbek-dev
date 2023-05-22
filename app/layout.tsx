@@ -17,15 +17,15 @@ export const metadata: Metadata = {
     default: 'Asad Karimov',
     template: '%s | Asad Karimov',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Developer and creator.',
   openGraph: {
-    title: 'Lee Robinson',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
+    title: 'Asadbek Karimov',
+    description: 'Developer, and creator.',
+    url: 'https://asadbek.dev',
     siteName: 'Asad Karimov',
     images: [
       {
-        url: 'https://leerob.io/og.jpg',
+        url: 'https://asadbke.dev/og.jpg',
         width: 1920,
         height: 1080,
       },
@@ -53,7 +53,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
   },
 };
 

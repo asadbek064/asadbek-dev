@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getBlogViews, getTweetCount, getStarCount } from 'lib/metrics';
+import {getTweetCount, getStarCount } from 'lib/metrics';
 import {
   ArrowIcon,
   GitHubIcon,
@@ -12,12 +12,11 @@ import { name, about, bio, avatar } from 'lib/info';
 export const revalidate = 60;
 
 export default async function HomePage() {
-  let starCount, views, tweetCount;
+  let starCount, tweetCount;
 
   try {
-    [starCount, views, tweetCount] = await Promise.all([
+    [starCount, tweetCount] = await Promise.all([
       getStarCount(),
-      getBlogViews(),
       getTweetCount(),
     ]);
   } catch (error) {
@@ -43,7 +42,7 @@ export default async function HomePage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://twitter.com/realAsadbek"
             className="flex items-center gap-2"
           >
             <TwitterIcon />
@@ -52,16 +51,12 @@ export default async function HomePage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/leerob"
+            href="https://github.com/asadbek064"
             className="flex items-center gap-2"
           >
             <GitHubIcon />
             {`${starCount.toLocaleString()} stars on this repo`}
           </a>
-          <Link href="/blog" className="flex items-center">
-            <ViewsIcon />
-            {`${views.toLocaleString()} blog views all time`}
-          </Link>
         </div>
       </div>
       <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
