@@ -35,6 +35,17 @@ const projects : ProjectItem[] = [
     title: 'Nox WebRTC',
     description: 'Secure and anonymous video calling over webRTC',
     url: 'https://github.com/asadbek064/nox-WebRTC-videocalls'
+  },{
+    id: 4,
+    title: 'PascalCompiler',
+    description: 'Pascal compiler using Java programming language.',
+    url: 'https://github.com/asadbek064/PascalCompiler'
+  },
+  {
+    id: 5,
+    title: 'Old Portfolio',
+    description: 'My first attempted at creating my portfolio website.',
+    url: 'https://github.com/asadbek064/akarimov'
   }
 ];
 
