@@ -2790,54 +2790,106 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js": {
+    "(app-client)/./app/avatar.jpg": {
       "*": {
-        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
+        "id": "(sc_client)/./app/avatar.jpg",
         "name": "*",
         "chunks": [
-          "app/layout:app/layout"
+          "app/page:app/page"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
+        "id": "(sc_client)/./app/avatar.jpg",
         "name": "",
         "chunks": [
-          "app/layout:app/layout"
-        ],
-        "async": false
-      },
-      "Analytics": {
-        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
-        "name": "Analytics",
-        "chunks": [
-          "app/layout:app/layout"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./components/sidebar.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/sidebar.tsx",
-        "name": "*",
-        "chunks": [
-          "app/layout:app/layout"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/sidebar.tsx",
-        "name": "",
-        "chunks": [
-          "app/layout:app/layout"
+          "app/page:app/page"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./components/sidebar.tsx",
+        "id": "(sc_client)/./app/avatar.jpg",
         "name": "default",
         "chunks": [
-          "app/layout:app/layout"
+          "app/page:app/page"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/image.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "*",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "default",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/shared/lib/head.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "*",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
+        "name": "default",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/error.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/error.tsx",
+        "name": "*",
+        "chunks": [
+          "app/error:app/error"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/error.tsx",
+        "name": "",
+        "chunks": [
+          "app/error:app/error"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/error.tsx",
+        "name": "default",
+        "chunks": [
+          "app/error:app/error"
         ],
         "async": false
       }
@@ -2972,106 +3024,54 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./app/error.tsx": {
+    "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js": {
       "*": {
-        "id": "(sc_client)/./app/error.tsx",
+        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
         "name": "*",
         "chunks": [
-          "app/error:app/error"
+          "app/layout:app/layout"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./app/error.tsx",
+        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
         "name": "",
         "chunks": [
-          "app/error:app/error"
+          "app/layout:app/layout"
         ],
         "async": false
       },
-      "default": {
-        "id": "(sc_client)/./app/error.tsx",
-        "name": "default",
+      "Analytics": {
+        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
+        "name": "Analytics",
         "chunks": [
-          "app/error:app/error"
+          "app/layout:app/layout"
         ],
         "async": false
       }
     },
-    "(app-client)/./app/avatar.jpg": {
+    "(app-client)/./components/sidebar.tsx": {
       "*": {
-        "id": "(sc_client)/./app/avatar.jpg",
+        "id": "(sc_client)/./components/sidebar.tsx",
         "name": "*",
         "chunks": [
-          "app/page:app/page"
+          "app/layout:app/layout"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./app/avatar.jpg",
+        "id": "(sc_client)/./components/sidebar.tsx",
         "name": "",
         "chunks": [
-          "app/page:app/page"
+          "app/layout:app/layout"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./app/avatar.jpg",
+        "id": "(sc_client)/./components/sidebar.tsx",
         "name": "default",
         "chunks": [
-          "app/page:app/page"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/client/image.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
-        "name": "*",
-        "chunks": [
-          "app/page:app/page"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
-        "name": "",
-        "chunks": [
-          "app/page:app/page"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
-        "name": "default",
-        "chunks": [
-          "app/page:app/page"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/shared/lib/head.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "*",
-        "chunks": [
-          "app/page:app/page"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "",
-        "chunks": [
-          "app/page:app/page"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "default",
-        "chunks": [
-          "app/page:app/page"
+          "app/layout:app/layout"
         ],
         "async": false
       }
@@ -9228,65 +9228,755 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\global.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\font\\local\\target.css?{\"path\":\"app\\\\layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../public/fonts/kaisei-tokumin-latin-700-normal.woff2\",\"weight\":\"700\",\"variable\":\"--font-kaisei\",\"display\":\"swap\"}],\"variableName\":\"kaisei\"}#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\@vercel\\analytics\\dist\\react\\index.js": {
-      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\avatar.jpg": {
+      "id": "(app-client)/./app/avatar.jpg",
       "name": "*",
       "chunks": [
-        "app/layout:app/layout"
+        "app/page:app/page"
       ],
       "async": false
     },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\@vercel\\analytics\\dist\\react\\index.js#": {
-      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\avatar.jpg#": {
+      "id": "(app-client)/./app/avatar.jpg",
       "name": "",
       "chunks": [
-        "app/layout:app/layout"
+        "app/page:app/page"
       ],
       "async": false
     },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\@vercel\\analytics\\dist\\react\\index.js#Analytics": {
-      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
-      "name": "Analytics",
-      "chunks": [
-        "app/layout:app/layout"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\components\\sidebar.tsx": {
-      "id": "(app-client)/./components/sidebar.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:app/layout"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\components\\sidebar.tsx#": {
-      "id": "(app-client)/./components/sidebar.tsx",
-      "name": "",
-      "chunks": [
-        "app/layout:app/layout"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\components\\sidebar.tsx#default": {
-      "id": "(app-client)/./components/sidebar.tsx",
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\avatar.jpg#default": {
+      "id": "(app-client)/./app/avatar.jpg",
       "name": "default",
       "chunks": [
-        "app/layout:app/layout"
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\client\\image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\client\\image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\client\\image.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\client\\image.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\client\\image.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\client\\image.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-context.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-context.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-context.js#AmpStateContext": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
+      "name": "AmpStateContext",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-context.js#AmpStateContext": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
+      "name": "AmpStateContext",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-context.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-context.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-mode.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-mode.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-mode.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-mode.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-mode.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-mode.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-mode.js#isInAmpMode": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
+      "name": "isInAmpMode",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-mode.js#isInAmpMode": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
+      "name": "isInAmpMode",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\head.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\head.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-blur-svg.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-blur-svg.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-blur-svg.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-blur-svg.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-blur-svg.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-blur-svg.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-blur-svg.js#getImageBlurSvg": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
+      "name": "getImageBlurSvg",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-blur-svg.js#getImageBlurSvg": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
+      "name": "getImageBlurSvg",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config-context.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config-context.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config-context.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config-context.js#ImageConfigContext": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
+      "name": "ImageConfigContext",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config-context.js#ImageConfigContext": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
+      "name": "ImageConfigContext",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config-context.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config-context.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config.js#VALID_LOADERS": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
+      "name": "VALID_LOADERS",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config.js#VALID_LOADERS": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
+      "name": "VALID_LOADERS",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config.js#imageConfigDefault": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
+      "name": "imageConfigDefault",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config.js#imageConfigDefault": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
+      "name": "imageConfigDefault",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-loader.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-loader.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-loader.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-loader.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-loader.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-loader.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-loader.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-loader.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\match-remote-pattern.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\match-remote-pattern.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\match-remote-pattern.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\match-remote-pattern.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\match-remote-pattern.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\match-remote-pattern.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\match-remote-pattern.js#hasMatch": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
+      "name": "hasMatch",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\match-remote-pattern.js#hasMatch": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
+      "name": "hasMatch",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\match-remote-pattern.js#matchRemotePattern": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
+      "name": "matchRemotePattern",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\match-remote-pattern.js#matchRemotePattern": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
+      "name": "matchRemotePattern",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\side-effect.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\side-effect.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\side-effect.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\side-effect.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\side-effect.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\side-effect.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\side-effect.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\side-effect.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\utils\\warn-once.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\utils\\warn-once.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\utils\\warn-once.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\utils\\warn-once.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\utils\\warn-once.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\utils\\warn-once.js#__esModule": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
+      "name": "__esModule",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\utils\\warn-once.js#warnOnce": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
+      "name": "warnOnce",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\utils\\warn-once.js#warnOnce": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
+      "name": "warnOnce",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\error.tsx": {
+      "id": "(app-client)/./app/error.tsx",
+      "name": "*",
+      "chunks": [
+        "app/error:app/error"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\error.tsx#": {
+      "id": "(app-client)/./app/error.tsx",
+      "name": "",
+      "chunks": [
+        "app/error:app/error"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\error.tsx#default": {
+      "id": "(app-client)/./app/error.tsx",
+      "name": "default",
+      "chunks": [
+        "app/error:app/error"
       ],
       "async": false
     },
@@ -10746,755 +11436,65 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\error.tsx": {
-      "id": "(app-client)/./app/error.tsx",
-      "name": "*",
-      "chunks": [
-        "app/error:app/error"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\error.tsx#": {
-      "id": "(app-client)/./app/error.tsx",
-      "name": "",
-      "chunks": [
-        "app/error:app/error"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\error.tsx#default": {
-      "id": "(app-client)/./app/error.tsx",
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\global.css#": {
+      "id": "null",
       "name": "default",
       "chunks": [
-        "app/error:app/error"
-      ],
-      "async": false
+        "static/css/app/layout.css"
+      ]
     },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\avatar.jpg": {
-      "id": "(app-client)/./app/avatar.jpg",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\avatar.jpg#": {
-      "id": "(app-client)/./app/avatar.jpg",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\app\\avatar.jpg#default": {
-      "id": "(app-client)/./app/avatar.jpg",
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\font\\local\\target.css?{\"path\":\"app\\\\layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../public/fonts/kaisei-tokumin-latin-700-normal.woff2\",\"weight\":\"700\",\"variable\":\"--font-kaisei\",\"display\":\"swap\"}],\"variableName\":\"kaisei\"}#": {
+      "id": "null",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
+        "static/css/app/layout.css"
+      ]
     },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\client\\image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\@vercel\\analytics\\dist\\react\\index.js": {
+      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/layout:app/layout"
       ],
       "async": false
     },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\client\\image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\@vercel\\analytics\\dist\\react\\index.js#": {
+      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\@vercel\\analytics\\dist\\react\\index.js#Analytics": {
+      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
+      "name": "Analytics",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\components\\sidebar.tsx": {
+      "id": "(app-client)/./components/sidebar.tsx",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/layout:app/layout"
       ],
       "async": false
     },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\client\\image.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\components\\sidebar.tsx#": {
+      "id": "(app-client)/./components/sidebar.tsx",
       "name": "",
       "chunks": [
-        "app/page:app/page"
+        "app/layout:app/layout"
       ],
       "async": false
     },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\client\\image.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\client\\image.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\components\\sidebar.tsx#default": {
+      "id": "(app-client)/./components/sidebar.tsx",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\client\\image.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "default",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-context.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-context.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-context.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-context.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-context.js#AmpStateContext": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
-      "name": "AmpStateContext",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-context.js#AmpStateContext": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
-      "name": "AmpStateContext",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-context.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-context.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-context.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-mode.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-mode.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-mode.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-mode.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-mode.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-mode.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\amp-mode.js#isInAmpMode": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
-      "name": "isInAmpMode",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\amp-mode.js#isInAmpMode": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/amp-mode.js",
-      "name": "isInAmpMode",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\head.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\head.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "default",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "default",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-blur-svg.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-blur-svg.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-blur-svg.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-blur-svg.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-blur-svg.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-blur-svg.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-blur-svg.js#getImageBlurSvg": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
-      "name": "getImageBlurSvg",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-blur-svg.js#getImageBlurSvg": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-blur-svg.js",
-      "name": "getImageBlurSvg",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config-context.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config-context.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config-context.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config-context.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config-context.js#ImageConfigContext": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
-      "name": "ImageConfigContext",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config-context.js#ImageConfigContext": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
-      "name": "ImageConfigContext",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config-context.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config-context.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config-context.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config.js#VALID_LOADERS": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
-      "name": "VALID_LOADERS",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config.js#VALID_LOADERS": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
-      "name": "VALID_LOADERS",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-config.js#imageConfigDefault": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
-      "name": "imageConfigDefault",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-config.js#imageConfigDefault": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-config.js",
-      "name": "imageConfigDefault",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-loader.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-loader.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-loader.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-loader.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-loader.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-loader.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\image-loader.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
-      "name": "default",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\image-loader.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/image-loader.js",
-      "name": "default",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\match-remote-pattern.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\match-remote-pattern.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\match-remote-pattern.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\match-remote-pattern.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\match-remote-pattern.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\match-remote-pattern.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\match-remote-pattern.js#hasMatch": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
-      "name": "hasMatch",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\match-remote-pattern.js#hasMatch": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
-      "name": "hasMatch",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\match-remote-pattern.js#matchRemotePattern": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
-      "name": "matchRemotePattern",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\match-remote-pattern.js#matchRemotePattern": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/match-remote-pattern.js",
-      "name": "matchRemotePattern",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\side-effect.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\side-effect.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\side-effect.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\side-effect.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\side-effect.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\side-effect.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\side-effect.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
-      "name": "default",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\side-effect.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/side-effect.js",
-      "name": "default",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\utils\\warn-once.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\utils\\warn-once.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\utils\\warn-once.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\utils\\warn-once.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\utils\\warn-once.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\utils\\warn-once.js#__esModule": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
-      "name": "__esModule",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\shared\\lib\\utils\\warn-once.js#warnOnce": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
-      "name": "warnOnce",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Light\\sidprjt\\asadbek-dev\\node_modules\\next\\dist\\esm\\shared\\lib\\utils\\warn-once.js#warnOnce": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/utils/warn-once.js",
-      "name": "warnOnce",
-      "chunks": [
-        "app/page:app/page"
+        "app/layout:app/layout"
       ],
       "async": false
     }

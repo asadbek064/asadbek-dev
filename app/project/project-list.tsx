@@ -16,7 +16,7 @@ const ProjectList = ({ projects }) => {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-neutral-50 hover:bg-neutral-700 hover:text-neutral-50 text-neutral-700 font-semibold py-1 px-3 rounded-md"
+            className="inline-block bg-neutral-200 hover:bg-neutral-700 hover:text-neutral-200 text-neutral-700 font-semibold py-1 px-3 rounded-md"
           >
             View Project
           </a>

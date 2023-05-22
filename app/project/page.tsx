@@ -42,9 +42,11 @@ const projects : ProjectItem[] = [
 export default function ProjectPage() {
   return (
     <section>
-      <h1 className="font-bold text-3xl font-serif">Projects</h1>
-      
-      <div className="mt-4">
+      <div className="bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">
+        <h1 className="font-bold text-3xl font-bold">Projects</h1>
+      </div>
+
+      <div className="mt-6">
         <ProjectList projects={projects} />
       </div>
     </section>

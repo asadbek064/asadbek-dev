@@ -16,7 +16,9 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <section>
-      <h1 className="font-bold text-3xl font-serif">About Me</h1>
+      <div className="bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">
+        <h1 className="font-bold text-3xl font-bold">About Me</h1>
+      </div>
       <p className="my-5 text-neutral-800 dark:text-neutral-200">
         Hey, I'm Asadbek. Most folks know me as <b>light</b> online.
       </p>
