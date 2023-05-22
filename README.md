@@ -1,5 +1,6 @@
 # asadbek.dev
 
+
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Database**: [PlanetScale](https://planetscale.com)
 - **Authentication**: [NextAuth.js](https://next-auth.js.org)
