@@ -24,8 +24,8 @@
     "datePublished": "2020-09-14",
     "dateModified": "2020-09-14",
     "description": "Learn how CSS has evolved and explore pros and cons of different styling solutions for React.",
-    "image": "https://leerob.io/api/og?title=How Should I Style My React Application?",
-    "url": "https://leerob.io/blog/css-with-react",
+    "image": "https://asadbek.dev/api/og?title=How Should I Style My React Application?",
+    "url": "https://asadbek.dev/blog/css-with-react",
     "author": {
       "@type": "Person",
       "name": "Lee Robinson"

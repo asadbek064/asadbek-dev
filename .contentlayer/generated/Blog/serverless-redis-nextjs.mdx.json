@@ -24,8 +24,8 @@
     "datePublished": "2021-03-19",
     "dateModified": "2021-03-19",
     "description": "Did you know it's possible to use Redis for your entire database? Hashmaps, counters, sorted lists, and even queues. Learn how to deploy a Redis & Next.js app in a few short minutes.",
-    "image": "https://leerob.io/api/og?title=Using Serverless Redis with Next.js",
-    "url": "https://leerob.io/blog/serverless-redis-nextjs",
+    "image": "https://asadbek.dev/api/og?title=Using Serverless Redis with Next.js",
+    "url": "https://asadbek.dev/blog/serverless-redis-nextjs",
     "author": {
       "@type": "Person",
       "name": "Lee Robinson"

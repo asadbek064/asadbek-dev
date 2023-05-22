@@ -24,8 +24,8 @@
     "datePublished": "2014-10-31",
     "dateModified": "2014-10-31",
     "description": "Utilizing Python and PyGame to revive a classic.",
-    "image": "https://leerob.io/api/og?title=Creating a Space Invaders Clone with Python",
-    "url": "https://leerob.io/blog/space-invaders-with-python",
+    "image": "https://asadbek.dev/api/og?title=Creating a Space Invaders Clone with Python",
+    "url": "https://asadbek.dev/blog/space-invaders-with-python",
     "author": {
       "@type": "Person",
       "name": "Lee Robinson"

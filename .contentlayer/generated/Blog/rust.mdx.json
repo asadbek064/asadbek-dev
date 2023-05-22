@@ -24,8 +24,8 @@
     "datePublished": "Nov 11, 2021",
     "dateModified": "Nov 11, 2021",
     "description": "Why is Rust being used to replace parts of the JavaScript web ecosystem like minification (Terser), transpilation (Babel), formatting (Prettier), bundling (webpack), linting (ESLint), and more?",
-    "image": "https://leerob.io/api/og?title=Rust Is The Future of JavaScript Infrastructure",
-    "url": "https://leerob.io/blog/rust",
+    "image": "https://asadbek.dev/api/og?title=Rust Is The Future of JavaScript Infrastructure",
+    "url": "https://asadbek.dev/blog/rust",
     "author": {
       "@type": "Person",
       "name": "Lee Robinson"

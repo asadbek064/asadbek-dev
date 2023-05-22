@@ -24,8 +24,8 @@
     "datePublished": "2019-02-15",
     "dateModified": "2019-02-15",
     "description": "CSS Modules, Font Loading, Polyfills, Dynamic Imports, MDX, and more!",
-    "image": "https://leerob.io/api/og?title=Things I've Learned Building Next.js Apps",
-    "url": "https://leerob.io/blog/things-ive-learned-building-nextjs-apps",
+    "image": "https://asadbek.dev/api/og?title=Things I've Learned Building Next.js Apps",
+    "url": "https://asadbek.dev/blog/things-ive-learned-building-nextjs-apps",
     "author": {
       "@type": "Person",
       "name": "Lee Robinson"

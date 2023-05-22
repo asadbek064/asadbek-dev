@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Full-stack developer Experience at Pieshares inc .',
+  description: 'Full-stack developer Experience at Pieshares inc.',
 };
 
 export default function AboutPage() {

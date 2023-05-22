@@ -24,8 +24,8 @@
     "datePublished": "2019-08-21",
     "dateModified": "2019-08-21",
     "description": "Want more accurate page view counts? Learn how to track real-time post views using Firebase and Next.js.",
-    "image": "https://leerob.io/api/og?title=Real-Time Blog Post Views With Next.js and Firebase",
-    "url": "https://leerob.io/blog/real-time-post-views",
+    "image": "https://asadbek.dev/api/og?title=Real-Time Blog Post Views With Next.js and Firebase",
+    "url": "https://asadbek.dev/blog/real-time-post-views",
     "author": {
       "@type": "Person",
       "name": "Lee Robinson"

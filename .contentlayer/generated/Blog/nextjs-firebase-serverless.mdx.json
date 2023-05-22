@@ -24,8 +24,8 @@
     "datePublished": "2019-07-19",
     "dateModified": "2019-07-19",
     "description": "Learn how to use Firebase with Next.js and deploy it to Vercel.",
-    "image": "https://leerob.io/api/og?title=Using Firebase with Next.js",
-    "url": "https://leerob.io/blog/nextjs-firebase-serverless",
+    "image": "https://asadbek.dev/api/og?title=Using Firebase with Next.js",
+    "url": "https://asadbek.dev/blog/nextjs-firebase-serverless",
     "author": {
       "@type": "Person",
       "name": "Lee Robinson"

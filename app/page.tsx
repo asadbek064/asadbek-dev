@@ -48,15 +48,6 @@ export default async function HomePage() {
             <TwitterIcon />
             {`${tweetCount.toLocaleString()} tweets all time`}
           </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/asadbek064"
-            className="flex items-center gap-2"
-          >
-            <GitHubIcon />
-            {`${starCount.toLocaleString()} stars on this repo`}
-          </a>
         </div>
       </div>
       <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
@@ -68,7 +59,7 @@ export default async function HomePage() {
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://twitter.com/realAsadbek"
           >
             <ArrowIcon />
             <p className="h-7">follow me on twitter</p>

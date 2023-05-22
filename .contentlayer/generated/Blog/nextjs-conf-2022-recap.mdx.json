@@ -31,8 +31,8 @@
     "datePublished": "2022-10-29",
     "dateModified": "2022-10-29",
     "description": "My recap of the 2022 Next.js Conf, which had 110,000+ registrants and 55,000+ developers joining live.",
-    "image": "https://leerob.io/api/og?title=Behind the scenes: Next.js Conf 2022",
-    "url": "https://leerob.io/blog/nextjs-conf-2022-recap",
+    "image": "https://asadbek.dev/api/og?title=Behind the scenes: Next.js Conf 2022",
+    "url": "https://asadbek.dev/blog/nextjs-conf-2022-recap",
     "author": {
       "@type": "Person",
       "name": "Lee Robinson"

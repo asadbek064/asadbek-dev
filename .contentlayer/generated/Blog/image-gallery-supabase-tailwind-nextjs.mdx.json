@@ -24,8 +24,8 @@
     "datePublished": "2022-03-28",
     "dateModified": "2022-03-28",
     "description": "Learn how to create an image gallery with dynamic content from a PostgreSQL database, with support for content updates without needing to redeploy.",
-    "image": "https://leerob.io/api/og?title=Building an Image Gallery with Next.js, Supabase, and Tailwind CSS",
-    "url": "https://leerob.io/blog/image-gallery-supabase-tailwind-nextjs",
+    "image": "https://asadbek.dev/api/og?title=Building an Image Gallery with Next.js, Supabase, and Tailwind CSS",
+    "url": "https://asadbek.dev/blog/image-gallery-supabase-tailwind-nextjs",
     "author": {
       "@type": "Person",
       "name": "Lee Robinson"

@@ -27,8 +27,8 @@
     "datePublished": "2022-05-30",
     "dateModified": "2022-05-30",
     "description": "How Heroku changed how we build and deploy software.",
-    "image": "https://leerob.io/api/og?title=The Story of Heroku",
-    "url": "https://leerob.io/blog/heroku",
+    "image": "https://asadbek.dev/api/og?title=The Story of Heroku",
+    "url": "https://asadbek.dev/blog/heroku",
     "author": {
       "@type": "Person",
       "name": "Lee Robinson"

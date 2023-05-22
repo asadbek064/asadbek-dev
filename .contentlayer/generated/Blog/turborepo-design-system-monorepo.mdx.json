@@ -24,8 +24,8 @@
     "datePublished": "2019-03-29",
     "dateModified": "2019-03-29",
     "description": "Manage multiple packages with a shared build, test, and release process using Turborepo, Changesets, Storybook, and more.",
-    "image": "https://leerob.io/api/og?title=Building a Design System Monorepo with Turborepo",
-    "url": "https://leerob.io/blog/turborepo-design-system-monorepo",
+    "image": "https://asadbek.dev/api/og?title=Building a Design System Monorepo with Turborepo",
+    "url": "https://asadbek.dev/blog/turborepo-design-system-monorepo",
     "author": {
       "@type": "Person",
       "name": "Lee Robinson"
