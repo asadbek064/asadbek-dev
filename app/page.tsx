@@ -25,7 +25,10 @@ export default async function HomePage() {
 
   return (
     <section>
-      <div className="bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">
+      <div className="
+        dark:bg-gradient-to-r dark:from-amber-200 dark:to-yellow-500 text-transparent bg-clip-text
+        bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+        ">
         <h1 className="font-bold text-3xl font-bold">{name}</h1>
       </div>
       <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">

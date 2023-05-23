@@ -18,7 +18,7 @@ const navItems = {
 };
 
 function Logo() {
-const isDarkTheme = true;
+const isDarkTheme = (window.matchMedia('(prefers-color-scheme: dark)').matches);
   return (
     <Link aria-label="Asadbek Karimov" href="/">
       {isDarkTheme ? (

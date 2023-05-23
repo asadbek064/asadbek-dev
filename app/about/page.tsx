@@ -16,7 +16,10 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <section>
-      <div className="bg-gradient-to-r from-amber-200 to-yellow-500 text-transparent bg-clip-text">
+      <div className="
+        dark:bg-gradient-to-r dark:from-amber-200 dark:to-yellow-500 text-transparent bg-clip-text
+        bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+        ">
         <h1 className="font-bold text-3xl font-bold">About Me</h1>
       </div>
       <p className="my-5 text-neutral-800 dark:text-neutral-200">
@@ -24,16 +27,14 @@ export default function AboutPage() {
       </p>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
         <p>
-          I'm the creator of <Link href="https://animet.site">AnimetTV</Link> where I try to create a unique spot for everything Anime medium.
+          I'm currently building <Link rel="noopener noreferrer" target='_blank' href="https://animet.site">AnimetTV</Link> a webapp for everything Anime medium.
         </p>
         <hr />
         <p>
-          I <b>love</b> building for the web. From something as simple as a
-          utility extensions – all the way to large Next.js applications. The web
-          is incredible.
+          Before AnimetTV, I worked at startup <Link rel="noopener noreferrer" target='_blank' href="https://pieshares.com/">Pieshares, Inc</Link> as a Full-stack developer for 2 years.
         </p>
         <p className="mb-8">
-          Outside of AnimetTV, I'm college student attending <Link href="https://www.qc.cuny.edu/">Queens College University</Link> majoring in <b>Computer Science.</b>
+          Outside of AnimetTV, I'm college student attending <Link rel="noopener noreferrer" target='_blank' href="https://www.qc.cuny.edu/">Queens College University</Link> majoring in <b>Computer Science.</b>
           I have coded in many languages but perfer Python, TypeScript and C++.
           I have a strong interest in <b>Data Science</b> although I program a lot of scrappers and web apps in my free time.
         </p>
