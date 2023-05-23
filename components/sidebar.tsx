@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { LayoutGroup, motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const navItems = {
   '/': {
@@ -17,8 +18,7 @@ const navItems = {
   }, 
 };
 
-function Logo() {
-const isDarkTheme = (window.matchMedia('(prefers-color-scheme: dark)').matches);
+function Logo({isDarkTheme}) {
   return (
     <Link aria-label="Asadbek Karimov" href="/">
       {isDarkTheme ? (
@@ -34,11 +34,18 @@ export default function Navbar() {
 
   let pathname = usePathname() || '/';
 
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  useEffect(() => {
+    let preferedMode = (window.matchMedia('(prefers-color-scheme: dark)').matches);
+    setIsDarkTheme(preferedMode);
+  });
+
   return (
     <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif">
       <div className="lg:sticky lg:top-20">
-        <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-8 space-y-10 flex flex-col md:flex-row items-start ">
-          <Logo />
+        <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-8 space-y-10 flex flex-col md:flex-row items-start ease-in duration-150">
+          <Logo isDarkTheme={isDarkTheme}/>
         </div>
         <LayoutGroup>
           <nav
