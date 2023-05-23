@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'Asad Karimov',
     images: [
       {
-        url: 'https://asadbke.dev/og.png',
+        url: 'https://asadbek.dev/og.png',
         width: 1920,
         height: 1080,
       },
