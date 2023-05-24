@@ -44,16 +44,9 @@ export default async function HomePage() {
           priority
         />
         <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://twitter.com/realAsadbek"
-            className="flex items-center gap-2"
-          >
-            <TwitterIcon />
-            {`${tweetCount.toLocaleString()} tweets all time`}
-          </a>
           <div>Full-stack Developer at Pieshares, Inc</div>
+          <div>Student at Queens College</div>
+
         </div>
       </div>
       <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">

@@ -31,12 +31,10 @@ export default function AboutPage() {
         </p>
         <hr />
         <p>
-          Before AnimetTV, I worked at startup <Link rel="noopener noreferrer" target='_blank' href="https://pieshares.com/">Pieshares, Inc</Link> as a Full-stack developer for 2 years.
+         Previously, I worked as a Full-stack developer at the startup <Link rel="noopener noreferrer" target='_blank' href="https://pieshares.com">Pieshares, Inc</Link>. for two years before starting <Link rel="noopener noreferrer" target='_blank' href="https://animet.site">AnimetTV</Link>.
         </p>
         <p className="mb-8">
-          Outside of AnimetTV, I'm college student attending <Link rel="noopener noreferrer" target='_blank' href="https://www.qc.cuny.edu/">Queens College University</Link> majoring in <b>Computer Science.</b>
-          I have coded in many languages but perfer Python, TypeScript and C++.
-          I have a strong interest in <b>Data Science</b> although I program a lot of scrappers and web apps in my free time.
+          As a college student at Queens College University majoring in Computer Science, I thrive in the world of development. My coding expertise spans multiple languages, with Python, TypeScript, and C++ being my top preferences. While I have a strong interest in <b>Data Science</b>, I also enjoy creating scrapers and developing web apps in my free time.
         </p>
         <div className="flex flex-col gap-2 md:flex-row md:gap-2">
           <a
