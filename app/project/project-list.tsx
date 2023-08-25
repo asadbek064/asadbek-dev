@@ -13,8 +13,8 @@ const ProjectList = ({ projects }) => {
           "
         >
           <div>
-            <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+            <h2 className="[font-size:var(--step-1)] font-semibold mb-2">{project.title}</h2>
+            <p className="[font-size:var(--step--0)] text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
           </div>
 
           <a
@@ -27,7 +27,7 @@ const ProjectList = ({ projects }) => {
               bg-neutral-200 hover:bg-neutral-700 hover:text-neutral-200 text-neutral-900
             "
           >
-            View Project
+            View
           </a>
         </div>
       ))}

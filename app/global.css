@@ -20,6 +20,8 @@
 
 html {
   min-width: 360px;
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
 }
 
 .prose .anchor {

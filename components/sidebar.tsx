@@ -52,7 +52,7 @@ export default function Navbar() {
             className="flex flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
             id="nav"
           >
-            <div className="flex flex-row md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
+            <div className="flex flex-row md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0 [font-size:var(--step-1)]">
               {Object.entries(navItems).map(([path, { name }]) => {
                 const isActive = path === pathname;
                 return (
