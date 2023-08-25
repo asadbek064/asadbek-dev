@@ -29,15 +29,15 @@ export default async function HomePage() {
         dark:bg-gradient-to-r dark:from-amber-200 dark:to-yellow-500 text-transparent bg-clip-text
         bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
         ">
-        <h1 className="font-bold text-3xl font-bold">{name}</h1>
+        <h1 className="[font-size:var(--step-4)] font-bold">{name}</h1>
       </div>
-      <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
+      <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200 [font-size:var(--step-0)]">
         {about()}
       </p>
       <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
         <Image
           alt={name}
-          className="rounded-lg grayscale"
+          className="rounded-lg grayscale-[70%]"
           src={avatar}
           placeholder="blur"
           width={100}

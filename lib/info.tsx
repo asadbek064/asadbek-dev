@@ -5,7 +5,7 @@ export const avatar = me;
 export const about = () => {
   return (
     <>
-      Hey, I'm Asad. I'm a Full-stack developer, who loves building web applications and tools for humans.
+    Hey, I'm Asad. I'm a Full-stack developer, who loves building web applications and tools for humans.
     </>
   );
 };

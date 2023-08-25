@@ -27,13 +27,13 @@ const projects : ProjectItem[] = [
   {
     id: 2,
     title: 'ReactAllPlayer',
-    description: 'Automate searching and accepting Amazon Flex Driver jobs',
+    description: 'Simple lightweight, accessible, and customizable React media player that supports modern browsers.',
     url: 'https://github.com/asadbek064/react-all-player',
   },
   {
     id: 3,
     title: 'AmazonFlexWorker',
-    description: 'Simple lightweight, accessible, and customizable React media player that supports modern browsers.',
+    description: 'Automate searching and accepting Amazon Flex Driver jobs',
     url: 'https://github.com/asadbek064/AmazonFlexWorker',
   },
   {
@@ -63,7 +63,7 @@ export default function ProjectPage() {
       dark:bg-gradient-to-r dark:from-amber-200 dark:to-yellow-500 text-transparent bg-clip-text
       bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
       ">
-        <h1 className="font-bold text-3xl ">Projects</h1>
+        <h1 className="font-bold [font-size:var(--step-4)]">Projects</h1>
       </div>
 
       <div className="mt-6">

@@ -7,22 +7,24 @@ const ProjectList = ({ projects }) => {
         <div
           key={project.id}
           className="
-            p-6 rounded-lg shadow-md
+            p-6 rounded-md shadow-sm
             dark:bg-neutral-800 
+            flex flex-col justify-between
           "
         >
-          <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
-          
+          <div>
+            <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+          </div>
 
           <a
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
             className="
-            inline-block font-semibold py-1 px-3 rounded-md
-            bg-neutral-200 hover:bg-neutral-700 hover:text-neutral-200 text-neutral-900
-
+              ease-in transition duration-75
+              inline-block font-semibold py-2 px-3 rounded-sm
+              bg-neutral-200 hover:bg-neutral-700 hover:text-neutral-200 text-neutral-900
             "
           >
             View Project
