@@ -8,12 +8,13 @@ const ProjectList = ({ projects }) => {
           key={project.id}
           className="
             p-6 rounded-md shadow-sm
+            bg-stone-100
             dark:bg-neutral-800 
             flex flex-col justify-between
           "
         >
           <div>
-            <h2 className="[font-size:var(--step-1)] font-semibold mb-2">{project.title}</h2>
+            <h2 className="[font-size:var(--step-1)] font-semibold mb-2 text-neutral-900 dark:text-neutral-200">{project.title}</h2>
             <p className="[font-size:var(--step--0)] text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
           </div>
         
@@ -24,7 +25,8 @@ const ProjectList = ({ projects }) => {
             className="
               ease-in transition duration-75
               font-semibold py-2 px-3 rounded-sm
-              text-neutral-200
+              dark:text-neutral-200
+              text-neutral-900
               hover:underline
             "
           >
