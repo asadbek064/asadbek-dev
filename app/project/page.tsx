@@ -20,35 +20,41 @@ interface ProjectItem {
 const projects : ProjectItem[] = [
   {
     id: 1,
-    title: 'AnimetTV',
+    title: 'AniTrek',
     description: 'An anime-themed website featuring reviews, a trivia game, online clip streaming, and image-based anime title identification, with a built-in search feature.',
-    url: 'https://animet.site/',
+    url: 'https://anitrek.co/',
   },
   {
     id: 2,
     title: 'ReactAllPlayer',
     description: 'Simple lightweight, accessible, and customizable React media player that supports modern browsers.',
-    url: 'https://github.com/asadbek064/react-all-player',
+    url: 'https://reactallplayer.asadbek.dev/',
   },
   {
     id: 3,
+    title: 'Gradient Wizard',
+    description: 'Blend Tailwind CSS Colors for striking text and background gradients, with custom or ready-made options for remarkable designs',
+    url: 'https://gwizard.asadbek.dev/',
+  },
+  {
+    id: 4,
     title: 'AmazonFlexWorker',
     description: 'Automate searching and accepting Amazon Flex Driver jobs',
     url: 'https://github.com/asadbek064/AmazonFlexWorker',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Nox WebRTC',
     description: 'Secure and anonymous video calling over webRTC',
     url: 'https://github.com/asadbek064/nox-WebRTC-videocalls'
   },{
-    id: 5,
+    id: 6,
     title: 'PascalCompiler',
     description: 'Pascal compiler using Java programming language.',
     url: 'https://github.com/asadbek064/PascalCompiler'
   },
   {
-    id: 6,
+    id: 7,
     title: 'Old Portfolio',
     description: 'My first attempted at creating my portfolio website.',
     url: 'https://github.com/asadbek064/akarimov'
