@@ -14,7 +14,8 @@ interface ProjectItem {
   id: number;
   title: string;
   description: string;
-  url: string;
+  url?: string;
+  github?: string;
 }
 
 const projects : ProjectItem[] = [
@@ -23,18 +24,21 @@ const projects : ProjectItem[] = [
     title: 'AniTrek',
     description: 'An anime-themed website featuring reviews, a trivia game, online clip streaming, and image-based anime title identification, with a built-in search feature.',
     url: 'https://anitrek.co/',
+    github: 'https://github.com/asadbek064/anitrek-client'
   },
   {
     id: 2,
     title: 'ReactAllPlayer',
     description: 'Simple lightweight, accessible, and customizable React media player that supports modern browsers.',
     url: 'https://reactallplayer.asadbek.dev/',
+    github: 'https://github.com/asadbek064/react-all-player'
   },
   {
     id: 3,
     title: 'Gradient Wizard',
     description: 'Blend Tailwind CSS Colors for striking text and background gradients, with custom or ready-made options for remarkable designs',
     url: 'https://gwizard.asadbek.dev/',
+    github: 'https://github.com/asadbek064/gradient-wizard'
   },
   {
     id: 4,
@@ -46,18 +50,12 @@ const projects : ProjectItem[] = [
     id: 5,
     title: 'Nox WebRTC',
     description: 'Secure and anonymous video calling over webRTC',
-    url: 'https://github.com/asadbek064/nox-WebRTC-videocalls'
+    github: 'https://github.com/asadbek064/nox-WebRTC-videocalls'
   },{
     id: 6,
     title: 'PascalCompiler',
     description: 'Pascal compiler using Java programming language.',
-    url: 'https://github.com/asadbek064/PascalCompiler'
-  },
-  {
-    id: 7,
-    title: 'Old Portfolio',
-    description: 'My first attempted at creating my portfolio website.',
-    url: 'https://github.com/asadbek064/akarimov'
+    github: 'https://github.com/asadbek064/PascalCompiler'
   }
 ];
 

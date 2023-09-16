@@ -18,20 +18,38 @@ const ProjectList = ({ projects }) => {
             <p className="[font-size:var(--step--0)] text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
           </div>
         
-          <a
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              ease-in transition duration-75
-              font-semibold py-2 px-3 rounded-sm
-              dark:text-neutral-200
-              text-neutral-900
-              hover:underline
-            "
-          >
-            View
-          </a>
+          <div className='flex flex-row justify-start'>
+            {project.url && (
+                <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  ease-in transition duration-75
+                  font-semibold py-2 px-3 rounded-sm
+                  dark:text-neutral-200
+                  text-neutral-900
+                  hover:underline
+                "
+              >
+                Live
+              </a>
+            )}
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                ease-in transition duration-75
+                font-semibold py-2 px-3 rounded-sm
+                dark:text-neutral-200
+                text-neutral-900
+                hover:underline
+              "
+            >
+              Source Code
+            </a>
+          </div>
         </div>
       ))}
     </div>
