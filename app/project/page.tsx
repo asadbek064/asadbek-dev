@@ -64,10 +64,10 @@ export default function ProjectPage() {
   return (
     <section>
       <div className="
-      dark:bg-gradient-to-r dark:from-amber-200 dark:to-yellow-500 text-transparent bg-clip-text
-      bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+      text-transparent bg-clip-text
+      bg-gradient-to-r from-cyan-500 to-blue-500
       ">
-        <h1 className="font-bold [font-size:var(--step-4)]">Projects</h1>
+        <h1 className="font-bold [font-size:var(--step-2)]">Projects</h1>
       </div>
 
       <div className="mt-6">

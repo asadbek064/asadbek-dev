@@ -42,17 +42,17 @@ export default function Navbar() {
   });
 
   return (
-    <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif">
-      <div className="lg:sticky lg:top-20">
-        <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-8 space-y-10 flex flex-col md:flex-row items-start ease-in duration-150">
+    <div className="font-serif" >
+      <div className="flex md:justify-end justify-start">
+        {/* <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-8 space-y-10 flex flex-col md:flex-row items-start ease-in duration-150">
           <Logo isDarkTheme={isDarkTheme}/>
-        </div>
+        </div> */}
         <LayoutGroup>
           <nav
-            className="flex flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+            className="flex flex-row items-start relative px-4 md:px-0 pb-0 fade  scroll-pr-6"
             id="nav"
           >
-            <div className="flex flex-row md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0 [font-size:var(--step-1)]">
+            <div className="flex flex-row space-x-0  mb-2 mt-2 [font-size:var(--step-1)]">
               {Object.entries(navItems).map(([path, { name }]) => {
                 const isActive = path === pathname;
                 return (
@@ -88,6 +88,6 @@ export default function Navbar() {
           </nav>
         </LayoutGroup>
       </div>
-    </aside>
+    </div>
   );
 }
