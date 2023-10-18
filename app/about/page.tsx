@@ -26,12 +26,12 @@ export default function AboutPage() {
         Hey, I'm Asadbek. Most folks know me as <b>Asad</b> online.
       </p>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200 [font-size:var(--step-0)]">
-        <p>
+        {/* <p>
           I'm currently building <Link rel="noopener noreferrer" target='_blank' href="https://anitrek.co">AniTrek</Link> a webapp for everything Anime medium.
-        </p>
+        </p> */}
         <div className="w-full border-b border-gray-400"></div>
         <p>
-         Previously, I worked as a Full-stack developer at the startup <Link rel="noopener noreferrer" target='_blank' href="https://pieshares.com">Pieshares, Inc</Link>. for two years before starting <Link rel="noopener noreferrer" target='_blank' href="https://anitrek.co">AniTrek</Link>.
+         Previously, I worked as a Full-stack developer at the startup <Link rel="noopener noreferrer" target='_blank' href="https://pieshares.com">Pieshares, Inc</Link>.
         </p>
         <p className="mb-8">
         Queens College Computer Science major skilled in TypeScript, Java, and Python. Enthusiastic about <b>Data Science</b> and enjoys creating web apps and <b>scrapers</b> in spare time.
