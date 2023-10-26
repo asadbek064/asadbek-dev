@@ -9,10 +9,4 @@ export const about = () => {
     </>
   );
 };
-export const bio = () => {
-  return (
-    <>
-     
-    </>
-  );
-};
+

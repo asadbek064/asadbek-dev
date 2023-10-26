@@ -1,4 +1,6 @@
-import React from 'react';
+import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 const ProjectList = ({ projects }) => {
   return (
@@ -8,19 +10,24 @@ const ProjectList = ({ projects }) => {
           key={project.id}
           className="
             p-6 rounded-md shadow-sm
-            bg-stone-100
+            bg-neutral-50
             dark:bg-neutral-800 
             flex flex-col justify-between
+            style={{ boxShadow: 'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px' }}
           "
         >
           <div>
-            <h2 className="[font-size:var(--step-1)] font-semibold mb-2 text-neutral-900 dark:text-neutral-200">{project.title}</h2>
-            <p className="[font-size:var(--step--0)] text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+            <h2 className="[font-size:var(--step-0)] font-semibold mb-2 text-neutral-800 dark:text-neutral-200">
+              {project.title}
+            </h2>
+            <p className="[font-size:var(--step--0)] text-neutral-800 dark:text-gray-300 mb-4">
+              {project.description}
+            </p>
           </div>
-        
-          <div className='flex flex-row justify-start'>
+
+          <div className="flex flex-row justify-start">
             {project.url && (
-                <a
+              <a
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -29,10 +36,9 @@ const ProjectList = ({ projects }) => {
                   font-semibold py-2 px-3 rounded-sm
                   dark:text-neutral-200
                   text-neutral-900
-                  hover:underline
-                "
+                  hover:underline"
               >
-                Live
+                <FiExternalLink className="h-6 w-6" />
               </a>
             )}
             <a
@@ -47,7 +53,7 @@ const ProjectList = ({ projects }) => {
                 hover:underline
               "
             >
-              Source Code
+              <FaGithub className="h-6 w-6" />
             </a>
           </div>
         </div>
