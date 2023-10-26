@@ -21,7 +21,7 @@ const HomeBanner = ({}) => {
                 </div>
             </div>
 
-            <div className="md:[font-size:var(--step-5)] [font-size:var(--step-3)] text-neutral-800 font-semibold">👋 Hey, I'm Asad!</div>
+            <div className="md:[font-size:var(--step-5)] [font-size:var(--step-3)] text-neutral-800 dark:text-neutral-200 font-semibold">👋 Hey, I'm Asad!</div>
         </div>
         </>
     );

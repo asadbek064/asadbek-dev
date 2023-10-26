@@ -45,7 +45,7 @@ export default async function HomePage() {
       
       <div className='flex flex-col my-12'>
         <div className="space-y-4">
-          <h1 className="font-bold [font-size:var(--step-2)] mb-4 text-neutral-800">Blog</h1>
+          <h1 className="font-bold [font-size:var(--step-2)] mb-4 text-neutral-800  dark:text-neutral-200">Blog</h1>
             {allBlogs
             .sort((a, b) => {
               if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
@@ -70,7 +70,7 @@ export default async function HomePage() {
       </div>
 
       <div className="flex flex-col">
-        <div className="[font-size:var(--step-2)] font-bold mb-4 text-neutral-800">Notable Projects</div>
+        <div className="[font-size:var(--step-2)] font-bold mb-4 text-neutral-800  dark:text-neutral-200">Notable Projects</div>
         <ProjectList projects={projects} />
       </div>
 
