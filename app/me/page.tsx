@@ -9,22 +9,19 @@ import { BsLinkedin, BsEnvelopePaper } from 'react-icons/bs';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'Me',
   description: 'Full-stack developer Experience at Pieshares inc.',
 };
 
-export default function AboutPage() {
+export default function MePage() {
   return (
     <section>
       <div className="
         text-transparent bg-clip-text
         bg-gradient-to-r from-cyan-500 to-blue-500
         ">
-        <h1 className="font-bold [font-size:var(--step-2)]">About Me</h1>
+        <h1 className="font-bold [font-size:var(--step-2)]">Me</h1>
       </div>
-      <p className="my-4 text-neutral-800 dark:text-neutral-200">
-        Hey, I'm Asadbek. Most folks know me as <b>Asad</b> online.
-      </p>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200 [font-size:var(--step-0)]">
         {/* <p>
           I'm currently building <Link rel="noopener noreferrer" target='_blank' href="https://anitrek.co">AniTrek</Link> a webapp for everything Anime medium.

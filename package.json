@@ -4,8 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "build-only": "next build",
-    "start": "next start -p 4001",
-    "setup": "node ./lib/setup.mjs"
+    "start": "next start -p 4001"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",

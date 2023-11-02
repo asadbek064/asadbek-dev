@@ -93,15 +93,17 @@ export default async function Blog({ params }) {
           __html: JSON.stringify(post.structuredData),
         }}
       ></script>
-      <h1 className="font-bold text-2xl tracking-tighter max-w-[650px]">
+      <h1 className="font-bold text-2xl tracking-tighter max-w-[700px] text-neutral-800">
         <Balancer>{post.title}</Balancer>
       </h1>
-      <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+      <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[700px] ">
+        <p className="text-sm text-neutral-950 dark:text-neutral-400">
           {formatDate(post.publishedAt)}
         </p>
       </div>
-      <Mdx code={post.body.code} />
+      <div className="bg-white px-6 py-2 rounded-sm">
+        <Mdx code={post.body.code} />
+      </div>
     </section>
   );
 }

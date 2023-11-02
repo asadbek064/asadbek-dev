@@ -39,10 +39,10 @@ export const projects : ProjectItem[] = [
        title: 'Nox WebRTC',
        description: 'Secure and anonymous video calling over webRTC',
        github: 'https://github.com/asadbek064/nox-WebRTC-videocalls'
-     },{
+     }/* ,{
        id: 6,
        title: 'PascalCompiler',
        description: 'Pascal compiler using Java programming language.',
        github: 'https://github.com/asadbek064/PascalCompiler'
-     }
+     } */
    ];
