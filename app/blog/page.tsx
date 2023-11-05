@@ -21,7 +21,7 @@ export default async function BlogPage() {
         .map((post) => (
           <Link
             key={post.slug}
-            className="flex flex-col space-y-1 mb-4 hover:bg-neutral-100 py-2 px-4 duration-100 transition ease-in"
+            className="flex flex-col space-y-1 mb-4 hover:bg-neutral-100 py-2 px-4 duration-100 transition ease-in dark:hover:bg-neutral-700"
             href={`/blog/${post.slug}`}
           >
             <div className="w-full flex flex-col">
