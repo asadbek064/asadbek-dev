@@ -10,7 +10,7 @@ export const projects : ProjectItem[] = [
      {
        id: 1,
        title: 'AniTrek',
-       description: 'An anime-themed website featuring reviews, a trivia game, online clip streaming, and image-based anime title identification, with a built-in search feature.',
+       description: 'An anime-themed website featuring reviews, a trivia game, and image-based anime title identification, with a built-in search feature.',
        url: 'https://anitrek.co/',
        github: 'https://github.com/asadbek064/anitrek-client'
      },
