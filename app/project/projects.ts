@@ -22,13 +22,6 @@ export const projects : ProjectItem[] = [
        github: 'https://github.com/asadbek064/react-all-player'
      },
      {
-       id: 3,
-       title: 'Gradient Wizard',
-       description: 'Blend Tailwind CSS Colors for striking text and background gradients, with custom or ready-made options for remarkable designs',
-       url: 'https://gwizard.asadbek.dev/',
-       github: 'https://github.com/asadbek064/gradient-wizard'
-     },
-     {
        id: 4,
        title: 'AmazonFlexWorker',
        description: 'Automate searching and accepting Amazon Flex Driver jobs',
