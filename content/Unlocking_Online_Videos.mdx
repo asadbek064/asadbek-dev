@@ -67,6 +67,14 @@ An M3U8 file is like a set of instructions for your device to play an online vid
 
 <b>example of m3u8 file</b>
 
+<Image
+  alt={`M3U8 file example`}
+  src={`/images/video-link-decryption/m3u8-file-example.png`}
+  width={1600}
+  height={840} 
+/>
+
+
 ```txt
 #EXTM3U
 #EXT-X-VERSION:4
@@ -78,5 +86,12 @@ stream_540p.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=500000,RESOLUTION=640x360,CODECS="avc1.64001f,mp4a.40.2",AUDIO="audio"
 stream_360p.m3u8
 ```
+**#EXTM3U** Indicates that this is an M3U8 manifest file.  <br/>
+**#EXT_X-VERSION:4** Specifies theversion on HLS protocol <br/>
+**#EXT-X-MEDIA:TYPE=AUDIO ... URI="audio.m3u8"** Describes the audio track for the video stream with default states.<br/>
+**BANDWIDTH** Bitrate of th estream in `bits per secon` (2000000 for 2Mbps).<br/>
+**RESOLUTION** Video resolution (e.g 1280x720 for 720 for 720p)<br/>
+**[CODECS](https://en.wikipedia.org/wiki/List_of_codecs)** Specifies the video and adio codecs used (e.g [H.264](https://en.wikipedia.org/wiki/Advanced_Video_Coding) and [AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding))<br/>
+**stream_720p.m3u8, stream_540p.m3u8, and stream_360p.m3u8**: These are the URIs to the actual video playlists for each variant.
 
-... (draft)
+
