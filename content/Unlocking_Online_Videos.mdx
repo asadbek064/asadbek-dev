@@ -3,6 +3,12 @@ title: 'Unlocking Online Videos: How to Retrieve M3U8 Manifests and Bypass DRM'
 publishedAt: '2023-10-24'
 summary: ''
 ---
+```txt
+The information provided is offered as is and solely for educational purposes. 
+I am not responsible for any misuse or unintended consequences resulting from its 
+application. Use this information responsibly and within the bounds of ethical and 
+legal considerations.
+```
 
 ## Intro
 In the ever-evolving landscape of online media streaming, the way we access and enjoy
@@ -93,5 +99,61 @@ stream_360p.m3u8
 **RESOLUTION** Video resolution (e.g 1280x720 for 720 for 720p)<br/>
 **[CODECS](https://en.wikipedia.org/wiki/List_of_codecs)** Specifies the video and adio codecs used (e.g [H.264](https://en.wikipedia.org/wiki/Advanced_Video_Coding) and [AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding))<br/>
 **stream_720p.m3u8, stream_540p.m3u8, and stream_360p.m3u8**: These are the URIs to the actual video playlists for each variant.
+
+
+## What is adaptive bitrate streaming?
+Adaptive bitrate streaming optimizes video quality by dynamically adjusting to network conditions, enhancing the streaming experience over HTTP networks. This ensures seamless playback for viewers, irrespective of their device, location, or internet speed.
+<Image
+  alt={`M3U8 file example`}
+  src={`/images/video-link-decryption/adaptive-bitrate.png`}
+  width={300}
+  height={240} 
+/>
+
+## What are the benefits of adaptive bitrate streaming?
+As of 2022, TikTok users collectively stream one billion hours of video content daily. Video communication, advertising, and education are thriving on this platform, emphasizing the importance of quality playback. Adaptive bitrate streaming on TikTok brings significant benefits:
+
+ - **Expanded Reach:** Without adaptive bitrate streaming, users with slower connections or specific devices might miss out on engaging TikTok videos.
+ - **Enhanced User Experience:** Adaptive bitrate streaming minimizes buffering, reducing frustrating loading delays and enhancing the overall enjoyment for TikTok users.
+ - **Seamless Mobile Viewing:** Mobile streaming on TikTok has skyrocketed. Adaptive bitrate streaming adjusts to variable mobile network conditions, ensuring uninterrupted viewing experiences as users move from one location to another.
+
+ ## There are **two** streaming protocols that support adaptive bitrate streaming.
+ A [protocol](https://www.cloudflare.com/learning/network-layer/what-is-a-protocol/) is a set of standars that dictate how data is packaged and processed across networks. Streaming has its own set of protocls.
+
+ **HLS** and **DASH** are two streaming protocols with distinct characteristics:
+  - **HLS:** HLS accommodates both on-demand and live streaming, utilizing the H.264 or H.265 encoding format. Unlike some protocols, it doesn't necessitate special servers. Initially designed for Apple devices, HLS is now compatible with various platforms. However, Apple devices exclusively support the HLS format.
+  - **DASH:** DASH doesn't mandate a specific encoding standard. Any origin server can be configured for DASH streams as it operates over HTTP. Unlike HLS and most other formats, DASH is incompatible with Apple devices. 
+
+In the previous example of extracting video links, the video was in the form of an mp4, and all you needed was one link. However, as no one serves mp4 over the internet anymore due to the widespread use of adaptive bitrate technology, the question arises: How can we extract and download adaptive bitrate videos?
+
+## How can we extract and download adaptive bitrate videos?'
+### Step 1: Find m3u8 / MPEG-DASH file.
+  
+  example: <br />
+  `M3U8_URL = http://example.com/path/to/your/file.m3u8`
+    
+  `MPEG-DASH_URL = http://example.com/path/to/your/file.mpd`
+
+### Step 2: Use FFMPEG download all segments.
+  1. [Download ffmpeg](https://ffmpeg.org/download.html) 
+    - For linux  <kbd> sudo apt install ffmpeg</kbd>
+
+  2. This will download all the segments mentioned in the m3u8 file to the current directory.
+
+  - **HLS**
+    <kbd>ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -i "$M3U8_URL" -c copy -bsf:a aac_adtstoasc output.mp4</kbd>
+
+  - **MPEG-DASH**
+    <kbd>ffmpeg -i "$MPD_URL" -c copy -bsf:a aac_adtstoasc output.mp4</kbd>
+   
+
+### Step 3: Construct the segments to one vidoe.  
+  
+  If the segments have been downloaded to the current directory, you can use the following command to concatenate them.
+
+  - **HLS** <kbd>``` ffmpeg -f concat -safe 0 -i <(for f in ./*.ts; do echo "file '$PWD/$f'"; done) -c copy output.mp4 ```</kbd>
+
+  - **MPEG-DASH**
+  <kbd>``` ffmpeg -f concat -safe 0 -i <(for f in ./*.mp4; do echo "file '$PWD/$f'"; done) -c copy output.mp4 ```</kbd>
 
 
