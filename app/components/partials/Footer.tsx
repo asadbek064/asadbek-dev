@@ -29,7 +29,7 @@ const Footer = ({}) => {
                 </div>
 
                 <div className="text-neutral-800  dark:text-neutral-200 tracking-wide text-center">
-                    © Copyright 2020 - 2023 Asadbek
+                    © Copyright 2020 - 2024 Asadbek Karimov
                 </div>
             </div>
         </div>

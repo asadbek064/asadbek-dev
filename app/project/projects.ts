@@ -7,19 +7,25 @@ interface ProjectItem {
   }
   
 export const projects : ProjectItem[] = [
-     {
-       id: 1,
+      {
+        id: 1,
+        title: 'Mylinx',
+        description: `A seamless platform to consolidate all your online content in one easy-to-use place, whether you\'re creating, curating, or sharing. `,
+        url: 'https://mylinx.cc/',
+      },
+      {
+        id: 2,
+        title: 'ReactAllPlayer',
+        description: 'Simple lightweight, accessible, and customizable React media player that supports modern browsers.',
+        url: 'https://reactallplayer.asadbek.dev/',
+        github: 'https://github.com/asadbek064/react-all-player'
+      },
+      {
+       id: 3,
        title: 'AniTrek',
        description: 'An anime-themed website featuring reviews, a trivia game, and image-based anime title identification, with a built-in search feature.',
        url: 'https://anitrek.co/',
        github: 'https://github.com/asadbek064/anitrek-client'
-     },
-     {
-       id: 2,
-       title: 'ReactAllPlayer',
-       description: 'Simple lightweight, accessible, and customizable React media player that supports modern browsers.',
-       url: 'https://reactallplayer.asadbek.dev/',
-       github: 'https://github.com/asadbek064/react-all-player'
      },
      {
        id: 4,

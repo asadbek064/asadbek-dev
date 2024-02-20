@@ -26,8 +26,7 @@ const ProjectList = ({ projects }) => {
           </div>
 
           <div className="flex flex-row justify-start">
-            {project.url && (
-              <a
+            {project.url && (<a
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -39,22 +38,24 @@ const ProjectList = ({ projects }) => {
                   hover:underline"
               >
                 <FiExternalLink className="h-6 w-6" />
-              </a>
-            )}
+              </a>)}
+           
+           {project?.github && (
             <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-                ease-in transition duration-75
-                font-semibold py-2 px-3 rounded-sm
-                dark:text-neutral-200
-                text-neutral-900
-                hover:underline
-              "
-            >
-              <FaGithub className="h-6 w-6" />
-            </a>
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              ease-in transition duration-75
+              font-semibold py-2 px-3 rounded-sm
+              dark:text-neutral-200
+              text-neutral-900
+              hover:underline
+            "
+          >
+            <FaGithub className="h-6 w-6" />
+          </a>
+           )}
           </div>
         </div>
       ))}
