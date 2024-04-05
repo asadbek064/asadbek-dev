@@ -17,21 +17,22 @@ export default function MePage() {
   return (
     <section>
       <div className="
-        text-transparent bg-clip-text
-        bg-gradient-to-r from-cyan-500 to-blue-500
+        
+        animate fadeIn
         ">
-        <h1 className="font-bold [font-size:var(--step-2)]">Me</h1>
+        <h1 className="font-bold [font-size:var(--step-3)]">Me</h1>
       </div>
-      <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200 [font-size:var(--step-0)]">
+      <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200 [font-size:var(--step-0)] animate fadeIn">
         {/* <p>
           I'm currently building <Link rel="noopener noreferrer" target='_blank' href="https://anitrek.co">AniTrek</Link> a webapp for everything Anime medium.
         </p> */}
         <div className="w-full border-b border-gray-400"></div>
         <p>
-         Previously, I worked as a Full-stack developer at the startup <Link rel="noopener noreferrer" target='_blank' href="https://pieshares.com">Pieshares, Inc</Link>.
+         Previously, I worked as a software engineer intern at the startup <a target='_blank' href='https://pieshares.com'>Pieshares, Inc</a>.
+         Currently, I am leading the complete development of <a target='_blank' href='https://mylinx.cc'>mylinx.cc.</a>
         </p>
         <p className="mb-8">
-        Queens College Computer Science major skilled in TypeScript, Java, and Python. Enthusiastic about <b>Data Science</b> and enjoys creating web apps and <b>scrapers</b> in spare time.
+        Recent graduate of Queens College with a major in Computer Science, proficient in TypeScript, Java, and Python. Passionate about <b>Data Science</b> and enjoys developing web apps and <b>scrapers</b> in spare time.
         </p>
         <div className="flex flex-col gap-2 md:flex-row md:gap-2">
           <a

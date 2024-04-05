@@ -50,7 +50,7 @@ export default function Navbar() {
                       'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle',
                       {
                         'text-neutral-500': !isActive,
-                        'font-bold': isActive,
+                        'font-medium ': isActive,
                       }
                     )}
                   >
@@ -62,8 +62,8 @@ export default function Navbar() {
                           layoutId="sidebar"
                           transition={{
                             type: 'spring',
-                            stiffness: 350,
-                            damping: 30,
+                            stiffness: 500,
+                            damping: 35,
                           }}
                         />
                       ) : null}

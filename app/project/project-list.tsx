@@ -4,11 +4,12 @@ import { FiExternalLink } from "react-icons/fi";
 
 const ProjectList = ({ projects }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
       {projects.map((project) => (
         <div
           key={project.id}
           className="
+          animate fadeInUp
             p-6 rounded-md shadow-sm
             bg-neutral-50
             dark:bg-neutral-800 

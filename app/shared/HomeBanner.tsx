@@ -7,13 +7,13 @@ const HomeBanner = ({}) => {
         <>
         <div className="flex flex-col space-y-5">
             <div className="flex justify-end">
-                <div className="flex flex-row space-x-3 text-neutral-500 transition">
-                    <div className="hover:text-neutral-900 duration-100 cursor-pointer"> 
+                <div className="flex flex-row space-x-3 text-neutral-500 transition  animate fadeInRight">
+                    <div className="hover:text-neutral-800 duration-100 cursor-pointer"> 
                         <a>
                             <AiFillGithub className="h-5 w-5" />
                         </a>
                     </div>
-                    <div className="hover:text-neutral-900 duration-100 cursor-pointer">
+                    <div className="hover:text-neutral-800 duration-100 cursor-pointer">
                         <a>
                             <FaTwitter className="h-5 w-5" />
                         </a>
