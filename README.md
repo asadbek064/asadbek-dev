@@ -1,4 +1,4 @@
-# asadbek.dev
+# asadk.dev
 
 
 - **Framework**: [Next.js](https://nextjs.org/)

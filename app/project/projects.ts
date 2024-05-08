@@ -17,14 +17,14 @@ export const projects : ProjectItem[] = [
         id: 2,
         title: 'ReactAllPlayer',
         description: 'Simple lightweight, accessible, and customizable React media player that supports modern browsers.',
-        url: 'https://reactallplayer.asadbek.dev/',
+        url: 'https://reactallplayer.asadk.dev/',
         github: 'https://github.com/asadbek064/react-all-player'
       },
       {
        id: 3,
        title: 'AniTrek',
-       description: 'An anime-themed website featuring reviews, a trivia game, and image-based anime title identification, with a built-in search feature.',
-       url: 'https://anitrek.co/',
+       description: 'AniTrek is a multi-language platform for anime fans, offering easy watchlist management, content discovery, and community engagement. It gathers data on anime titles for easy discovery and features comment engine, AI scene search, Anime/Manga/Voice/Character/OP/ED search and consolidated watchlists from various providers. No streaming sources provided.',
+       url: 'https://anitrek.com/',
        github: 'https://github.com/asadbek064/anitrek-client'
      },
      {

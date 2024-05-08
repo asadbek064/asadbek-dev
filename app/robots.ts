@@ -5,7 +5,7 @@ export default function robots() {
         userAgent: '*',
       },
     ],
-    sitemap: 'https://asadbek.dev/sitemap.xml',
-    host: 'https://asadbek.dev',
+    sitemap: 'https://asadk.dev/sitemap.xml',
+    host: 'https://asadk.dev',
   };
 }

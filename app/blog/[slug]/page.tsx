@@ -21,8 +21,8 @@ export async function generateMetadata({
     slug,
   } = post;
   const ogImage = image
-    ? `https://asadbek.dev${image}`
-    : `https://asadbek.dev/og?title=${title}`;
+    ? `https://asadk.dev${image}`
+    : `https://asadk.dev/og?title=${title}`;
 
   return {
     title,
@@ -32,7 +32,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       publishedTime,
-      url: `https://asadbek.dev/blog/${slug}`,
+      url: `https://asadk.dev/blog/${slug}`,
       images: [
         {
           url: ogImage,

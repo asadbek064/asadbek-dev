@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Asadbek Karimov',
     description: 'Developer, and creator.',
-    url: 'https://asadbek.dev',
+    url: 'https://asadk.dev',
     siteName: 'Asad Karimov',
     images: [
       {
-        url: 'https://asadbek.dev/og-bg.png',
+        url: 'https://asadk.dev/og-bg.png',
         width: 1920,
         height: 1080,
       },

@@ -21,7 +21,7 @@ export default function MePage() {
         animate fadeIn
         ">
         <h1 className="font-bold [font-size:var(--step-3)]">Me</h1>
-      </div>
+      </div>1
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200 [font-size:var(--step-0)] animate fadeIn">
         {/* <p>
           I'm currently building <Link rel="noopener noreferrer" target='_blank' href="https://anitrek.co">AniTrek</Link> a webapp for everything Anime medium.
