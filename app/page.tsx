@@ -3,6 +3,7 @@ import ProjectList from './project/project-list';
 import { projects } from './project/projects';
 import { allBlogs } from "contentlayer/generated";
 import Link from 'next/link';
+import { format } from 'date-fns';
 
 export const revalidate = 60;
 
@@ -36,6 +37,9 @@ export default async function HomePage() {
                   <div className="text-neutral-900 dark:text-neutral-100 tracking-tight [font-size:var(--step-1)]">
                     {post.title}
                   </div>
+                  <div className="text-sm text-neutral-500 dark:text-neutral-400">
+                {format(new Date(post.publishedAt), "MMMM dd, yyyy")}
+              </div>
                 </div>
               </Link>
             ))}

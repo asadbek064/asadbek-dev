@@ -1,0 +1,86 @@
+---
+title: 'Creating Mylinx'
+publishedAt: '2024-07-27'
+summary: ''
+---
+
+# Creating Mylinx: An Accessible and Affordable Bio Link Solution
+
+When searching for a side SaaS project, I noticed a glaring issue in the bio link/micro website space: it was saturated with tools that either lacked essential features or placed them behind expensive paywalls. Many services offered limited customization, inadequate traffic analytics, and poor SEO control. These features were often locked behind subscription plans costing upwards of $10/month—an amount that many users, particularly in regions like India, Africa, and Southeast Asia, simply couldn't afford.
+
+## The Problem with Existing Tools
+
+Most bio link services out there promise to help users create a simple, customizable landing page. However, they fall short in several areas:
+
+1. **Limited Features:** Basic features like detailed traffic analytics, advanced SEO control, and deep customization options are often missing.
+2. **High Costs**: Essential tools are locked behind expensive paywalls, making them inaccessible to many users around the world.
+3. **Lack of Localization**: Many of these services don't offer multi-language support, limiting their usability for non-English speakers.
+
+<Image
+  alt={`M3U8 file example`}
+  src={`/images/creating-mylinx/pricing_plan_other.png`}
+  width={1600}
+  height={840} 
+/>
+
+## Ignoring Emerging Markets
+
+None of the professional tools on the market seem to care about users in second and third-world countries where there's a huge potential for upcoming creators and influencers. These regions are brimming with talented individuals who need accessible and affordable tools to boost their online presence and grow their following. Yet, the high costs and limited feature sets of existing solutions make it incredibly difficult for them to thrive.
+
+## The Birth of Mylinx
+
+Driven by this gap in the market, I decided to create Mylinx. Over the course of just three months, I built a platform that not only included core features similar to Linktree but also added significant enhancements:
+
+* **Full Customization:** Users can fully customize their pages, adjusting everything from the layout to the color.
+* **Music/Video Link:** Integration with popular music and video platforms to help content creators share their work more effectively.
+* **QR Codes:** Easy generation of QR codes for sharing links in the physical world.
+* **SEO Control:** Advanced SEO tools to help users improve their search engine rankings.
+* **Localization**: The app supports over 11 languages, making it accessible to a global audience: English, Español, हिन्दी, Deutsch, Русский, 日本語, اردو, Türkçe, Tiếng Việt, Melayu, عربي.
+* **URL Shortener:** A comprehensive solution to help make every point of connection between your content and your audience more powerful. Unlike other smart link services (cough cough, Bitly, TinyURL etc), Mylinx offers this feature without the exorbitant costs.
+
+<div className="relative w-full overflow-hidden" style={{ paddingBottom: '56.25%', height: 0 }}>
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/3IDwtt090cY"
+    frameBorder="0"
+    allowFullScreen
+    className="absolute top-0 left-0 w-full h-full"
+  ></iframe>
+</div>
+
+<div className="my-4">
+<Image
+  alt={`M3U8 file example`}
+  src={`/images/creating-mylinx/mylinx_free_plan.png`}
+  width={350}
+  height={350} 
+/>
+</div>
+
+## Technology Stack
+
+Building Mylinx required a robust and scalable technology stack. Here's what I used:
+
+* **Next.js:** For server-side rendering and a seamless user experience.
+* **Chakra UI:** To create a beautiful, responsive, and accessible user interface.
+* **Prisma:** For database management and seamless interaction with PostgreSQL
+* **Supabase:** As the primary database for its reliability and scalability.
+* **Vercel**: To deploy the application and ensure fast performance.
+* **Cloudflare**: For added security and content delivery network (CDN) services.
+* **Shlink**: For smart link shortening.
+* **Upstash**: As the caching layer to enhance performance.
+
+## Ensuring Availability and Consistency
+
+Availability means keeping the system running even during failures, typically measured as uptime. Consistency ensures all clients see the same data simultaneously. To achieve this, I use open-source tools like Supabase, Shlink, and Next.js in a self-dockerized setup. This ensures Mylinx remains highly available and consistent. If an upstream provider goes down, I can quickly redirect traffic through a backup, maintaining uninterrupted service.
+
+## The Impact
+
+In just a short time, Mylinx has gained traction. We now have over 1,000 pages and have recorded 750,000 page hits. The feedback has been overwhelmingly positive, particularly from content creators in emerging markets who appreciate the accessibility and affordability of the platform.
+
+## Join Us
+
+I invite you to check [Mylinx.cc](http://mylinx.cc/) and see for yourself how it can help you or your network. We're always open to suggestions, and my goal is to keep improving the platform to better serve content creators worldwide. Together, we can help boost their following and earnings without breaking the bank.
+
+
+
+Cheers to making the web more accessible and affordable for everyone!

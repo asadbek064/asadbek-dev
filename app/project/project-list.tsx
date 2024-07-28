@@ -38,7 +38,7 @@ const ProjectList = ({ projects }) => {
                   text-neutral-900
                   hover:underline"
               >
-                <FiExternalLink className="h-6 w-6" />
+                <FiExternalLink className="h-6 w-6 hover:text-blue-400 ease-in-out duration-200" />
               </a>)}
            
            {project?.github && (
@@ -54,7 +54,7 @@ const ProjectList = ({ projects }) => {
               hover:underline
             "
           >
-            <FaGithub className="h-6 w-6" />
+            <FaGithub className="h-6 w-6  hover:text-blue-400 ease-in-out duration-200" />
           </a>
            )}
           </div>

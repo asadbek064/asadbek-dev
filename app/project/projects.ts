@@ -10,7 +10,7 @@ export const projects : ProjectItem[] = [
       {
         id: 1,
         title: 'Mylinx',
-        description: `A seamless platform to consolidate all your online content in one easy-to-use place, whether you\'re creating, curating, or sharing. `,
+        description: `Bio pages, URL shorteners, and QR codes with Mylinx. Linktree-like platform emphasizing accessibility and affordability.`,
         url: 'https://mylinx.cc/',
       },
       {
@@ -23,7 +23,7 @@ export const projects : ProjectItem[] = [
       {
        id: 3,
        title: 'AniTrek',
-       description: 'AniTrek is a multi-language platform for anime fans, offering easy watchlist management, content discovery, and community engagement. It gathers data on anime titles for easy discovery and features comment engine, AI scene search, Anime/Manga/Voice/Character/OP/ED search and consolidated watchlists from various providers. No streaming sources provided.',
+       description: 'AniTrek is a multi-language platform for anime fans, offering watchlist management, content discovery, comments, AI scene search, and unified searches for anime, manga, and more.',
        url: 'https://anitrek.com/',
        github: 'https://github.com/asadbek064/anitrek-client'
      },
@@ -32,13 +32,13 @@ export const projects : ProjectItem[] = [
        title: 'AmazonFlexWorker',
        description: 'Automate searching and accepting Amazon Flex Driver jobs',
        url: 'https://github.com/asadbek064/AmazonFlexWorker',
-     },
+     }/* ,
      {
        id: 5,
        title: 'Nox WebRTC',
        description: 'Secure and anonymous video calling over webRTC',
        github: 'https://github.com/asadbek064/nox-WebRTC-videocalls'
-     }/* ,{
+     },{
        id: 6,
        title: 'PascalCompiler',
        description: 'Pascal compiler using Java programming language.',

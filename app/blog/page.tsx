@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { allBlogs } from "contentlayer/generated";
+import { format } from "date-fns";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -32,6 +33,9 @@ export default async function BlogPage() {
                 <div className="text-neutral-900 dark:text-neutral-100 tracking-tight [font-size:var(--step-1)]">
                   {post.title}
                 </div>
+                <div className="text-sm text-neutral-500 dark:text-neutral-400">
+                {format(new Date(post.publishedAt), "MMMM dd, yyyy")}
+              </div>
               </div>
             </Link>
             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-neutral-800" />
