@@ -30,7 +30,7 @@ export default async function HomePage() {
             .map((post) => (
               <Link
                 key={post.slug}
-                className="flex flex-col space-y-1 mb-4 hover:bg-neutral-100 dark:hover:bg-neutral-700 rounded-sm py-2 px-4 duration-100 transition ease-in"
+                className="flex flex-col space-y-2 mb-6 p-4 bg-white rounded-lg shadow-sm border duration-200 ease-in  hover:border-gray-400 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 transition"
                 href={`/blog/${post.slug}`}
               >
                 <div className="w-full flex flex-col">
@@ -46,8 +46,8 @@ export default async function HomePage() {
         </div>
       </div>
 
-      <div className="flex flex-col">
-        <div className="[font-size:var(--step-2)] font-bold mb-4 text-neutral-800  dark:text-neutral-200 ">Notable Projects</div>
+      <div className="flex flex-col mt-8">
+        <div className="[font-size:var(--step-2)] font-bold mb-4 text-neutral-800  dark:text-neutral-200 ">Check These Out!</div>
         <ProjectList projects={projects} />
       </div>
 

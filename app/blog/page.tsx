@@ -11,34 +11,27 @@ export const metadata: Metadata = {
 
 export default async function BlogPage() {
   return (
-    <section className="space-y-4">
-      <h1 className="font-bold [font-size:var(--step-3)] animate fadeIn">
+    <section className="space-y-4 p-4 md:p-8">
+      <h1 className="text-4xl font-bold mb-4" >
         Blog
       </h1>
       {allBlogs
-        .sort((a, b) => {
-          if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
-            return -1;
-          }
-          return 1;
-        })
+        .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
         .map((post) => (
-          <div>
+          <div key={post.slug}>
             <Link
-              key={post.slug}
-              className="flex flex-col space-y-1 mb-4 hover:bg-neutral-100 py-2 px-4 duration-100 transition ease-in dark:hover:bg-neutral-700 animate fadeInUp"
+              className="flex flex-col space-y-2 mb-6 p-4 bg-white rounded-lg shadow-md border duration-200 ease-in hover:border-gray-400 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 transition"
               href={`/blog/${post.slug}`}
             >
-              <div className="w-full flex flex-col">
-                <div className="text-neutral-900 dark:text-neutral-100 tracking-tight [font-size:var(--step-1)]">
+              <div>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
                   {post.title}
-                </div>
-                <div className="text-sm text-neutral-500 dark:text-neutral-400">
-                {format(new Date(post.publishedAt), "MMMM dd, yyyy")}
-              </div>
+                </h2>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  {format(new Date(post.publishedAt), "MMMM dd, yyyy")}
+                </p>
               </div>
             </Link>
-            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-neutral-800" />
           </div>
         ))}
     </section>

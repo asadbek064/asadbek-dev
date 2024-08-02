@@ -31,7 +31,7 @@ export const projects : ProjectItem[] = [
        id: 4,
        title: 'AmazonFlexWorker',
        description: 'Automate searching and accepting Amazon Flex Driver jobs',
-       url: 'https://github.com/asadbek064/AmazonFlexWorker',
+       github: 'https://github.com/asadbek064/AmazonFlexWorker',
      }/* ,
      {
        id: 5,

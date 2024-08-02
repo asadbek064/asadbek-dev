@@ -9,38 +9,41 @@ const ProjectList = ({ projects }) => {
         <div
           key={project.id}
           className="
-          animate fadeInUp
-            p-6 rounded-md shadow-sm
-            bg-neutral-50
-            dark:bg-neutral-800 
+           animate fadeInUp
+            p-6 rounded-md shadow-md
             flex flex-col justify-between
-            style={{ boxShadow: 'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px' }}
+            border hover:border-gray-500
+            duration-200
+            ease-in-out
           "
         >
           <div>
-            <h2 className="[font-size:var(--step-0)] font-semibold mb-2 text-neutral-800 dark:text-neutral-200">
-              {project.title}
-            </h2>
+          <a
+            href={project.url ? project.url : ''}
+            target={project.url && '_blank'}
+            rel="noopener noreferrer"
+            className="
+              cursor-pointer
+              transition 
+            "
+          >
+            <div className={`flex flex-row space-x-4 items-center [font-size:var(--step-0)] font-semibold mb-2 text-neutral-800 dark:text-neutral-20 ease-in-out duration-200 ${project.url && ' hover:text-blue-400'}`}>
+              <span>
+                {project.title}
+              </span>
+              {project.url && (
+              <span>
+                <FiExternalLink className="h-6 w-6" />
+              </span>
+              )}
+            </div>
+            </a>
             <p className="[font-size:var(--step--0)] text-neutral-800 dark:text-gray-300 mb-4">
               {project.description}
             </p>
           </div>
 
           <div className="flex flex-row justify-start">
-            {project.url && (<a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  ease-in transition duration-75
-                  font-semibold py-2 px-3 rounded-sm
-                  dark:text-neutral-200
-                  text-neutral-900
-                  hover:underline"
-              >
-                <FiExternalLink className="h-6 w-6 hover:text-blue-400 ease-in-out duration-200" />
-              </a>)}
-           
            {project?.github && (
             <a
             href={project.github}
