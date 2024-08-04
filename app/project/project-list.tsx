@@ -12,7 +12,10 @@ const ProjectList = ({ projects }) => {
            animate fadeInUp
             p-6 rounded-md shadow-md
             flex flex-col justify-between
-            border hover:border-gray-500
+            border
+            border-transparent
+            hover:border-gray-500
+            dark:hover:bg-neutral-900
             duration-200
             ease-in-out
           "
@@ -27,7 +30,7 @@ const ProjectList = ({ projects }) => {
               transition 
             "
           >
-            <div className={`flex flex-row space-x-4 items-center [font-size:var(--step-0)] font-semibold mb-2 text-neutral-800 dark:text-neutral-20 ease-in-out duration-200 ${project.url && ' hover:text-blue-400'}`}>
+            <div className={`flex flex-row space-x-4 items-center [font-size:var(--step-0)] font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 ${project.url && ' hover:text-blue-400'}`}>
               <span>
                 {project.title}
               </span>
@@ -38,7 +41,7 @@ const ProjectList = ({ projects }) => {
               )}
             </div>
             </a>
-            <p className="[font-size:var(--step--0)] text-neutral-800 dark:text-gray-300 mb-4">
+            <p className="[font-size:var(--step--0)] text-neutral-800 dark:text-white mb-4">
               {project.description}
             </p>
           </div>

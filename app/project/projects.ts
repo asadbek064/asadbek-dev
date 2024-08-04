@@ -27,12 +27,12 @@ export const projects : ProjectItem[] = [
        url: 'https://anitrek.com/',
        github: 'https://github.com/asadbek064/anitrek-client'
      },
-     {
+     /* {
        id: 4,
        title: 'AmazonFlexWorker',
        description: 'Automate searching and accepting Amazon Flex Driver jobs',
        github: 'https://github.com/asadbek064/AmazonFlexWorker',
-     }/* ,
+     } *//* ,
      {
        id: 5,
        title: 'Nox WebRTC',

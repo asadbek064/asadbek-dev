@@ -83,7 +83,7 @@ export default function RootLayout({
 
       </head>
 
-      <body className="antialiased max-w-3xl mb-20 flex flex-col mx-4 mt-8  lg:mt-32 md:mx-auto lg:mx-auto">
+      <body className="antialiased max-w-3xl mb-20 flex flex-col mx-4 mt-8  lg:mt-32 md:mx-auto lg:mx-auto ">
         <Sidebar />
         <main className="flex-auto min-w-0 mt-12 md:mt-12 flex flex-col px-2 md:px-0">
           {children}

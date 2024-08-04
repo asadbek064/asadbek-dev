@@ -22,7 +22,7 @@ const HomeBanner = ({}) => {
             </div>
 
             <div className="md:[font-size:var(--step-5)] [font-size:var(--step-3)] text-neutral-800 dark:text-neutral-200 font-semibold">👋 Hey, I'm Asad!</div>
-            <div className="text-gray-600 font-light">I’m all about diving into data science and scraping big datasets for easy access. I love solving tricky problems, optimizing data, and <span className="font-bold">building tools that everyone can use.</span></div>
+            <div className="text-gray-600 dark:text-white font-light">I’m all about diving into data science and scraping big datasets for easy access. I love solving tricky problems, optimizing data, and <span className="font-bold">building tools that everyone can use.</span></div>
         </div>
         </>
     );
