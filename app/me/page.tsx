@@ -1,33 +1,29 @@
-import type { Metadata } from 'next';
-import {
-  GitHubIcon,
-  ArrowIcon,
-  TwitterIcon,
-} from 'components/icons';
-import { BsLinkedin, BsEnvelopePaper } from 'react-icons/bs';
+// pages/index.tsx or your component file
+'use client'
 
+import { useState } from 'react';
+import Script from 'next/script';
+import { AiOutlineCalendar } from 'react-icons/ai';
+import { FiArrowRight } from 'react-icons/fi';
+import { BsLinkedin, BsEnvelopePaper } from 'react-icons/bs';
+import { GitHubIcon, ArrowIcon } from 'components/icons';
 import Link from 'next/link';
 
-export const metadata: Metadata = {
-  title: 'Me',
-  description: 'Full-stack developer Experience at Pieshares inc.',
-};
-
 export default function MePage() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false);
+
+
+
   return (
     <section>
-      <div className="
-        
-        animate fadeIn
-        ">
+      <div className="animate fadeIn">
         <h1 className="font-bold [font-size:var(--step-3)]">Me</h1>
       </div>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200 [font-size:var(--step-0)] animate fadeIn">
         <div className="w-full border-b border-gray-400"></div>
-        {/* <p>
-         Previously, I worked as a software engineer intern at the startup <a target='_blank' href='https://pieshares.com'>Pieshares, Inc</a>.
-         Currently, I am leading the complete development of <a target='_blank' href='https://mylinx.cc'>mylinx.cc.</a>
-        </p> */}
         <p>
           I currently work as a Software Engineer at <a target='_blank' href='https://sheetjs.com'>SheetJS</a>, where I manage documentation for developer tools, analyze data processing methods, and assist with troubleshooting and resolving technical issues. Additionally, I am leading the complete development of&nbsp;
           <Link href={'/blog/Creating_Mylinx'}>
@@ -36,14 +32,14 @@ export default function MePage() {
            a Linktree-like platform that offers bio pages, URL shorteners, and QR codes.
         </p>
         <p className="mb-8">
-        Recent graduate of Queens College with a major in Computer Science, proficient in TypeScript, Java, and Python. Passionate about <b>Data Science</b> and enjoys developing web apps and <b>scrapers</b> in spare time.
+          Recent graduate of Queens College with a major in Computer Science, proficient in TypeScript, Java, and Python. Passionate about <b>Data Science</b> and enjoys developing web apps and <b>scrapers</b> in spare time.
         </p>
         <div className="flex flex-col gap-2 md:flex-row md:gap-2">
           <a
             rel="noopener noreferrer"
             target="_blank"
             href="/Asad Karimov Resume_v1.pdf"
-            className=" flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
           >
             <div className="flex items-center">
               <BsEnvelopePaper />
@@ -51,7 +47,6 @@ export default function MePage() {
             </div>
             <ArrowIcon />
           </a>
-
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -76,9 +71,55 @@ export default function MePage() {
             </div>
             <ArrowIcon />
           </a>
-          
+        </div>
+        <div className="flex flex-col gap-2 md:flex-row md:gap-2 mt-4">
+          <a
+            onClick={openModal}
+            className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between cursor-pointer"
+          >
+            <div className="flex items-center">
+              <AiOutlineCalendar className="text-xl" />
+              <div className="ml-3">Book a Meeting</div>
+            </div>
+            <FiArrowRight className="text-xl" />
+          </a>
+
+          {isOpen && (
+         <div
+         className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50"
+         onClick={closeModal}
+       >
+         <div
+           className="bg-white p-0 rounded-lg shadow-md h-4/5 max-h-4/5 w-full max-w-full  md:w-1/2 md:max-w-1/2 md:h-3/4 md:max-h-3/4 relative"
+           onClick={(e) => e.stopPropagation()} 
+         >
+           <button
+             onClick={closeModal}
+             className="text-2xl font-bold absolute top-4 right-6 text-gray-600 hover:text-gray-700 z-10"
+           >
+             &times;
+           </button>
+           <iframe
+             src="https://calendly.com/asadbekkarimov/30min"
+             className="w-full h-full"
+             title="Booking Calendar"
+           />
+         </div>
+       </div>
+          )}
         </div>
       </div>
+
+      {/* Inject Calendly stylesheet and script */}
+  {/*     <Script
+        src="https://assets.calendly.com/assets/external/widget.js"
+        strategy="lazyOnload"
+        onLoad={() => console.log('Calendly script loaded successfully')}
+      />
+      <link
+        href="https://assets.calendly.com/assets/external/widget.css"
+        rel="stylesheet"
+      /> */}
     </section>
   );
 }

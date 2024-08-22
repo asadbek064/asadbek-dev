@@ -80,7 +80,6 @@ export default function RootLayout({
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window, document, "clarity", "script", "ne4floxof2"); `}
         </Script>
-
       </head>
 
       <body className="antialiased max-w-3xl mb-20 flex flex-col mx-4 mt-8  lg:mt-32 md:mx-auto lg:mx-auto ">
