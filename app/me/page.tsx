@@ -38,7 +38,7 @@ export default function MePage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="/Asad Karimov Resume_v1.pdf"
+            href="/Asadbek_Karimov_Resume_.pdf"
             className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
           >
             <div className="flex items-center">
