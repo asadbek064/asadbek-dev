@@ -1,0 +1,49 @@
+---
+title: 'How I Built a Scalable, Free URL Shortener.'
+publishedAt: '2024-08-24'
+summary: 'Learn how I created a cost-effective, scalable URL shortener using the open-source Shlink. This blog covers key aspects of reliability, scalability, and maintainability, and reveals how the Mylinx service can handle millions of visits and links monthly. Stay tuned for the upcoming Docker file release for easier deployment!'
+---
+
+## Introduction
+URL shorteners are in high demand for their ability to manage and share links effectively. They simplify long URLs, provide tracking analytics, and support branding. However, many services come with high costs or limitations for advanced features.
+
+## The Problem
+However, most services offer only a limited free tier—typically allowing just 2-5 short links—which is often inadequate for real use. Additionally, free URL shorteners often lack essential features and are frequently developed by amateurs. Many users find that free options, especially those as browser extensions, are not taken seriously unless they come with a paid version.
+
+## The Solution:
+Building a URL shortener from scratch? Nah, you’re crazy! Instead, we grabbed a trusty [open-source solution](https://shlink.io/) that’s already been battle-tested. By using this ready-made tool, we skipped the drama of starting from zero and cut our development time way down. This gave us more time to focus on making our app and management system even better—plus, it saved us from pulling out our hair!
+
+Next step on building this system we will have to check the 3 pillars of Designing data intensive application which are
+
+<a href="https://ezy.ovh/3nDTG">
+    <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8ci4n31ao11wofbp3yvn.png" alt="three 3 pillars of Designing data intensive application" />
+</a>
+### RELIABILITY
+- **Redundancy**: Run two instances of Shlink on separate VPS servers.
+- **Monitoring and Alerts**: Use a free status pinger for basic monitoring.
+- **Preventing Misuse**: To avoid Google flagging your domain for misuse, check URLs through [GCP Web Risk](https://cloud.google.com/security/products/web-risk?hl=en) before shortening. This helps identify and avoid malicious URLs.
+
+### **Scalability**
+- **Cloud Hosting**: Renting VPS servers and using [Coolify](https://coolify.io/) for container management is cost-effective.
+- **Load Balancing**: Use **NGINX** for distributing traffic.
+- **Caching**: Utilize [Redis Upstash](https://upstash.com/) for caching.
+
+### **Maintainability**
+- **Rate Limiting**: Implement rate limiting with [Redis Upstash](https://upstash.com/blog/upstash-ratelimit).
+- **Bot Detection**: Use Shlink’s built-in bot detection and consider adding **reCAPTCHA** to enhance security, especially for unauthenticated users.
+- **Quota Management**: Implement hard limits to ensure fair usage for all users.
+
+## Result
+**[URL Shortener Mylinx](https://ezy.ovh/QRP8p)**: A free, scalable, and cost-effective URL shortener. With the current cost of just **$20/month**, it supports up to **10 million visits** a month and can **generate 10-20 million short URL links**.
+
+
+![Free URL Shortener 1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/o3u2ua4dacq4lzhiv46p.png)
+
+![Free URL Shortener 2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rwltn1dj3scg8qj6za7d.png)
+
+![Free URL Shortener 3](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hhc7zydeov6282legsbk.png)
+
+## Conclusion
+In conclusion, building and managing a URL shortener can be both challenging and rewarding. By leveraging existing open-source tools and implementing strategies for reliability, scalability, and maintainability, you can create a robust and cost-effective solution. As part of our ongoing efforts to provide value to the community, I plan to release a Docker file for the Mylinx URL shortener in the near future. This will make it easier for others to deploy and use the service. Stay tuned for updates if you're interested in this public release!
+
+<br>
