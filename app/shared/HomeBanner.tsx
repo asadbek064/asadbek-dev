@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
+import { FaDev } from "react-icons/fa";
 
 const HomeBanner = ({}) => {
     return (
@@ -16,6 +17,11 @@ const HomeBanner = ({}) => {
                     <div className="hover:text-neutral-800 duration-100 cursor-pointer">
                         <a target="_blank" href="https://x.com/realasadbek">
                             <FaTwitter className="h-5 w-5" />
+                        </a>
+                    </div>
+                    <div className="hover:text-neutral-800 duration-100 cursor-pointer">
+                        <a target="_blank" href="https://ezy.ovh/asadk-dev">
+                            <FaDev  className="h-5 w-5" />
                         </a>
                     </div>
                 </div>
