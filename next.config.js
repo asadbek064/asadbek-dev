@@ -4,6 +4,11 @@ const { withContentlayer } = require('next-contentlayer');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    domains: [
+      'assets.aceternity.com',
+      'repository-images.githubusercontent.com',
+      'sheetjs.com'
+    ],
     formats: ['image/avif', 'image/webp'],
     // Twitter Profile Picture
     remotePatterns: [

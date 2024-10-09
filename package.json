@@ -10,10 +10,12 @@
     "@headlessui/react": "^1.7.14",
     "@octokit/rest": "^19.0.7",
     "@planetscale/database": "^1.5.0",
+    "@tabler/icons-react": "^3.19.0",
     "@vercel/analytics": "^0.1.11",
     "@vercel/edge-config": "^0.1.1",
     "@vercel/og": "^0.0.27",
-    "clsx": "^1.2.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "contentlayer": "^0.3.0",
     "date-fns": "^2.29.3",
     "dotenv": "^16.0.3",
@@ -34,7 +36,7 @@
     "server-only": "^0.0.1",
     "shiki": "^0.13.0",
     "swr": "^2.0.3",
-    "tailwind-merge": "^1.14.0"
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
