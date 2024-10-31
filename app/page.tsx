@@ -19,19 +19,25 @@ export default async function HomePage() {
       title: "2024 - Present",
       content: (
         <div>
-          <h3 className="text-lg font-semibold mb-2">Software Engineer at SheetJS</h3>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Revolutionizing data processing and documentation in the heart of NYC
+          <h3 className="text-xl font-semibold mb-2">Software Engineer at SheetJS</h3>
+          <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md font-normal mb-4">
+            Improving data processing and documentation solutions in the heart of NYC
           </p>
-          <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-xs md:text-sm mb-6">
-            <li>Improved integration time by 25% through enhanced documentation</li>
-            <li>Resolved 50+ critical technical issues</li>
+          <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-6">
+              <li>Reduced integration time by 25% with better documentation.</li>
+              <li>
+                  <span className='list-disc'>Help create a&nbsp;</span>
+                  <Link className='underline hover:text-blue-400 ease-in duration-100' href={'https://git.sheetjs.com/sheetjs/sheetjs/src/branch/master/packages/dta'} target='_blank'>codec</Link>
+                  <span>&nbsp;to read and write Stata .DTA files, enabling CSF workbook object generation.</span>
+                </li>
+              <li>Boosted Gitea server performance by 50% through smart caching and solving archive overfill issues.</li>
+              <li>Resolved over 50 critical technical issues, enhancing system reliability.</li>
           </ul>
           <div className="grid grid-cols-2 gap-4">
           <Link href={'https://sheetjs.com/'} target='_blank'>
               <Image
                 src="/images/timeline/shjs-banner.jpeg"
-                alt="PieShares Banner"
+                alt="Sheetjs logo"
                 width={360}
                 height={240}
                 className="rounded-lg object-cover h-28 w-full shadow-lg"
@@ -45,11 +51,11 @@ export default async function HomePage() {
       title: "2019 - 2021",
       content: (
         <div>
-          <h3 className="text-lg font-semibold mb-2">Software Engineer Intern at PieShares Inc</h3>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <h3 className="text-xl font-semibold mb-2">Software Engineer Intern at PieShares Inc</h3>
+          <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md  font-normal mb-4">
             Transforming user experiences and optimizing backend performance remotely
           </p>
-          <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-xs md:text-sm mb-6">
+          <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-6">
             <li>Increased user interactions by 30% with engaging Angular interfaces</li>
             <li>Reduced load times by 15% and increased user retention by 20%</li>
             <li>Implemented smart caching for 20% faster load times</li>
@@ -65,27 +71,51 @@ export default async function HomePage() {
           <Card className="mb-6">
             <CardContent className="p-4">
               <Link className='hover:cursor-pointer' href={'https://mylinx.cc/'} target='_blank'>
-                <h3 className="text-lg font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400">Mylinx.cc</h3>
+                <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">Mylinx.cc</h3>
               </Link>
-              <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-                Revolutionizing bio pages, URL shorteners, and QR codes
+              <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md font-normal mb-4">
+                Revolutionizing bio pages, URL shorteners, and QR codes.
               </p>
-              <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-xs md:text-sm mb-4">
-                <li>Achieved over 1,000 users and 750,000 page hits</li>
+              <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-4">
+                <li>Achieved over 1K users and 750K visits/month</li>
+                <li>
+                  <span className='list-disc'>Features -&nbsp;</span>
+                  <Link className='underline hover:text-blue-400 ease-in duration-100' href={'https://mylinx.cc/features'} target='_blank'>See for yourself!</Link>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="mb-6">
+            <CardContent className="p-4">
+              <Link className='hover:cursor-pointer' href={'https://www.anitrek.com/'} target='_blank'>
+                <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">Anitrek.com</h3>
+              </Link>
+              <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md  font-normal mb-4">
+                Innovative anime platform for content discovery and community engagement.
+              </p>
+              <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-4">
+                <li>Attracted 3K+ users and 1.2M searches in 3 months</li>
+                <li>🔍 <b>Advanced Search</b> Find anime, manga, voices, characters, and scenes with AI-powered search</li>
+                <li>📅 <b>Unified Watchlists</b> - Consolidate watchlists across multiple providers</li>
+                <li>💬 <b>Interactive Community</b> - Comment engine with reactions, nested replies, and markdown</li>
               </ul>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="p-4">
-              <Link className='hover:cursor-pointer' href={'https://www.anitrek.com/'} target='_blank'>
-                <h3 className="text-lg font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400">Anitrek.com</h3>
+              <Link className='hover:cursor-pointer' href={'https://reactallplayer.asadk.dev/'} target='_blank'>
+                <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">ReactAllPlayer</h3>
               </Link>
-              <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-                Innovative anime platform for content discovery and community engagement
+              <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md font-normal mb-4">
+                Customizable React video player with multi-resolution, streaming, and accessibility support.
               </p>
-              <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-xs md:text-sm mb-4">
-                <li>Reduced content search time by 30% with AI-powered search</li>
-                <li>Attracted 3,000+ users and 1.2 million searches in 6 months</li>
+              <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-4">
+                <li>💪 <b>Accessible</b> – Full support for VTT captions and screen readers</li>
+                <li>🔧 <b>Customizable</b> – Design your player with flexible markup</li>
+                <li>📱 <b>Responsive</b> – Adapts seamlessly to any screen size</li>
+                <li>📹 <b>Streaming</b> – Supports hls.js and dash.js playback</li>
+                <li>🔎 <b>Fullscreen</b> – Native fullscreen with "full window" fallback</li>
+
               </ul>
             </CardContent>
           </Card>
@@ -96,8 +126,8 @@ export default async function HomePage() {
       title: "Education",
       content: (
         <div>
-          <h3 className="text-lg font-semibold mb-2">Queens College, CUNY</h3>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <h3 className="text-xl font-semibold mb-2">Queens College, CUNY</h3>
+          <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg  font-normal mb-4">
             Bachelor of Arts in Computer Science (Graduated: January 2024)
           </p>
           <div className="grid grid-cols-2 gap-4 mb-6">
@@ -120,14 +150,14 @@ export default async function HomePage() {
               />
             </Link>
           </div>
-          <h4 className="text-md font-semibold mb-2">Relevant Coursework</h4>
+          <h4 className="text-lg font-semibold mb-2">Relevant Coursework</h4>
           <div className="flex flex-wrap gap-2 mb-2">
             {['Distributed Systems', 'Data Structures & Algorithms', 'Operating Systems', 'Software Engineering', 'Big Data Analytics'].map((lang) => (
               <Badge key={lang} variant="outline">{lang}</Badge>
             ))}
           </div>
-          <h4 className="text-md font-semibold mb-2">Notable Achievements</h4>
-          <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+          <h4 className="text-lg font-semibold mb-2">Notable Achievements</h4>
+          <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm">
             <li>Dean's List for 4 consecutive semesters</li>
           </ul>
         </div>
@@ -137,10 +167,10 @@ export default async function HomePage() {
       title: "Skills & Awards",
       content: (
         <div>
-          <h3 className="text-lg font-semibold mb-4">Technical Proficiencies</h3>
+          <h3 className="text-xl font-semibold mb-4">Technical Proficiencies</h3>
           <div className="grid grid-cols-2 gap-4 mb-6">
             <div>
-              <h4 className="text-md font-semibold mb-2">Languages</h4>
+              <h4 className="text-lg font-semibold mb-2">Languages</h4>
               <div className="flex flex-wrap gap-2">
                 {['TypeScript', 'JavaScript', 'Java', 'Python', 'C', 'CSS', 'HTML'].map((lang) => (
                   <Badge key={lang} variant="outline">{lang}</Badge>
@@ -148,7 +178,7 @@ export default async function HomePage() {
               </div>
             </div>
             <div>
-              <h4 className="text-md font-semibold mb-2">Frameworks & Tools</h4>
+              <h4 className="text-lg font-semibold mb-2">Frameworks & Tools</h4>
               <div className="flex flex-wrap gap-2">
                 {['React', 'Next.js', 'Angular', 'Node.js', 'Kafka', 'Prisma', 'TailwindCSS', 'Chakra UI'].map((tool) => (
                   <Badge key={tool} variant="outline">{tool}</Badge>
@@ -156,8 +186,8 @@ export default async function HomePage() {
               </div>
             </div>
           </div>
-          <h3 className="text-lg font-semibold mb-4">Awards & Recognitions</h3>
-          <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-xs md:text-sm mb-4">
+          <h3 className="text-xl font-semibold mb-4">Awards & Recognitions</h3>
+          <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-4">
             <li>Acknowledged Contributor for CVE-2024-22363 (SheetJS CE)</li>
           </ul>
         </div>
