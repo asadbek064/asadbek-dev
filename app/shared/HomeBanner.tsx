@@ -27,8 +27,13 @@ const HomeBanner = ({}) => {
                 </div>
             </div>
 
-            <div className="md:[font-size:var(--step-5)] [font-size:var(--step-3)] text-neutral-800 dark:text-neutral-200 font-semibold">👋 Hey, I'm Asad!</div>
-            <div className="text-gray-600 dark:text-white font-light">I’m all about diving into data science and scraping big datasets for easy access. I love solving tricky problems, optimizing data, and <span className="font-bold">building tools that everyone can use.</span></div>
+            <div className="md:[font-size:var(--step-5)] [font-size:var(--step-3)] text-neutral-800 dark:text-neutral-200 font-semibold">👋 Asad Karimov</div>
+            <div className="text-gray-600 dark:text-white font-light md:text-lg">
+                <span>Writing code at&nbsp;</span>
+                <Link className="underline hover:text-blue-500" href={'https://sheetjs.com/'}>SheetJS.</Link>
+            </div>
+            <hr className="my-12 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
+            <div className="text-gray-600 dark:text-white font-light md:text-lg ">I’m all about diving into data science and scraping big datasets for easy access. I love solving tricky problems, optimizing data, and <span className="font-bold">building tools that everyone can use.</span></div>
         </div>
         </>
     );
