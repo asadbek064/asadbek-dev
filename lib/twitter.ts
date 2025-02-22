@@ -3,7 +3,7 @@
 // so using the API directly for now, maybe change later
 //
 // You can view previous version with react-static-tweets in the PR commits
-export const getTweets = async (ids) => {
+export const getTweets = async (ids: any) => {
   if (ids.length === 0) {
     return [];
   }
@@ -30,15 +30,15 @@ export const getTweets = async (ids) => {
 
   const tweets = await response.json();
 
-  const getAuthorInfo = (author_id) => {
-    return tweets.includes.users.find((user) => user.id === author_id);
+  const getAuthorInfo = (author_id: any) => {
+    return tweets.includes.users.find((user: any) => user.id === author_id);
   };
 
-  const getReferencedTweets = (mainTweet) => {
+  const getReferencedTweets = (mainTweet: any) => {
     return (
-      mainTweet?.referenced_tweets?.map((referencedTweet) => {
+      mainTweet?.referenced_tweets?.map((referencedTweet: any) => {
         const fullReferencedTweet = tweets.includes.tweets.find(
-          (tweet) => tweet.id === referencedTweet.id
+          (tweet: any) => tweet.id === referencedTweet.id
         );
 
         return {
@@ -51,25 +51,25 @@ export const getTweets = async (ids) => {
   };
 
   return (
-    tweets.data.reduce((allTweets, tweet) => {
+    tweets.data.reduce((allTweets: any, tweet: any) => {
       const tweetWithAuthor = {
         ...tweet,
         media:
-          tweet?.attachments?.media_keys.map((key) =>
-            tweets.includes.media.find((media) => media.media_key === key)
+          tweet?.attachments?.media_keys.map((key: any) =>
+            tweets.includes.media.find((media: any) => media.media_key === key)
           ) || [],
         referenced_tweets: getReferencedTweets(tweet),
         author: getAuthorInfo(tweet.author_id),
       };
 
       return [tweetWithAuthor, ...allTweets];
-    }, []) || [] // If the Twitter API key isn't set, don't break the build
+    }, []) || []
   );
 };
 
 export const getTweetCount = async () => {
   const response = await fetch(
-    `https://api.twitter.com/2/users/by/username/leeerob?user.fields=public_metrics`,
+    `https://api.twitter.com/2/users/by/username/`,
     {
       headers: {
         Authorization: `Bearer ${process.env.TWITTER_API_TOKEN}`,
