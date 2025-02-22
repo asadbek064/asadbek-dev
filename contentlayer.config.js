@@ -14,7 +14,7 @@ const computedFields = {
     type: 'array',
     resolve: (doc) => {
       const tweetMatches = doc.body.raw.match(
-        /<StaticTweet\sid="[0-9]+"\s\/>/g
+          /<StaticTweet\sid="[0-9]+"\s\/>/g
       );
       return tweetMatches?.map((tweet) => tweet.match(/[0-9]+/g)[0]) || [];
     },
@@ -29,8 +29,8 @@ const computedFields = {
       dateModified: doc.publishedAt,
       description: doc.summary,
       image: doc.image
-        ? `https://asadk.dev${doc.image}`
-        : `https://asadk.dev/api/og?title=${doc.title}`,
+          ? `https://asadk.dev${doc.image}`
+          : `https://asadk.dev/api/og?title=${doc.title}`,
       url: `https://asadk.dev/blog/${doc._raw.flattenedPath}`,
       author: {
         '@type': 'Person',

@@ -1,8 +1,4 @@
 import type { Metadata } from "next";
-import { GitHubIcon, ArrowIcon, TwitterIcon } from "components/icons";
-import { BsLinkedin } from "react-icons/bs";
-
-import Link from "next/link";
 import ProjectList from "./project-list";
 import { projects } from "./projects";
 

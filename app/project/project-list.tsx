@@ -2,10 +2,10 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
-const ProjectList = ({ projects }) => {
+const ProjectList = ({ projects } : { projects: any }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-      {projects.map((project) => (
+      {projects.map((project: any) => (
         <div
           key={project.id}
           className="

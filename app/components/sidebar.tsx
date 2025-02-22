@@ -18,7 +18,7 @@ const navItems = {
   }, 
 };
 
-function Logo({isDarkTheme}) {
+function Logo({isDarkTheme} : { isDarkTheme: boolean }) {
   return (
     <Link aria-label="Asadbek Karimov" href="/">
       {isDarkTheme ? (
@@ -44,9 +44,6 @@ export default function Navbar() {
   return (
     <div className="font-serif" >
       <div className="flex md:justify-end justify-start">
-        {/* <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-8 space-y-10 flex flex-col md:flex-row items-start ease-in duration-150">
-          <Logo isDarkTheme={isDarkTheme}/>
-        </div> */}
         <LayoutGroup>
           <nav
             className="flex flex-row items-start relative px-4 md:px-0 pb-0 fade  scroll-pr-6"

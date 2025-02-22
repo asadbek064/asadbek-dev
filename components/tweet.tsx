@@ -15,7 +15,13 @@ export default function Tweet({
   created_at,
   public_metrics,
   referenced_tweets,
-}) {
+} : { id: any,
+  text: any,
+  author: any,
+  media: any,
+  created_at: any,
+  public_metrics: any,
+  referenced_tweets: any }) {
   const authorUrl = `https://twitter.com/${author.username}`;
   const likeUrl = `https://twitter.com/intent/like?tweet_id=${id}`;
   const retweetUrl = `https://twitter.com/intent/retweet?tweet_id=${id}`;
@@ -27,7 +33,7 @@ export default function Tweet({
     .replace(/https:\/\/[\n\S]+/g, '')
     .replace('&amp;', '&');
   const quoteTweet =
-    referenced_tweets && referenced_tweets.find((t) => t.type === 'quoted');
+    referenced_tweets && referenced_tweets.find((t: any) => t.type === 'quoted');
 
   return (
     <div className="tweet rounded-lg border border-neutral-200 dark:border-neutral-800 px-6 py-4 my-4 bg-white dark:bg-neutral-900 max-w-xl mx-auto">
@@ -107,7 +113,7 @@ export default function Tweet({
               : 'inline-grid grid-cols-2 gap-x-2 gap-y-2 my-2'
           }
         >
-          {media.map((m) => (
+          {media.map((m: any) => (
             <Image
               key={m.media_key}
               alt={text}

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Helvetica Neue,sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif;
 }
 ::selection {
   background-color: #47a3f3;
@@ -77,18 +77,6 @@ html::before {
   @apply visible;
 }
 
-.prose pre {
-  @apply border border-neutral-800 bg-neutral-900;
-}
-
-.prose code {
-  @apply text-neutral-800 dark:text-neutral-200 px-1 py-0.5 border border-neutral-100 dark:border-neutral-800 rounded-lg bg-neutral-100 dark:bg-neutral-900;
-}
-
-.prose pre code {
-  @apply text-neutral-800 dark:text-neutral-200 p-0;
-  border: initial;
-}
 
 .prose img {
   /* Don't apply styles to next/image */
@@ -98,7 +86,7 @@ html::before {
 .prose > :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
+  margin-bottom: 1.25em ! important;
 }
 
 code[class*='language-'],
@@ -205,4 +193,46 @@ table {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #6b6b6b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+.stagger-child-animations > * {
+  opacity: 0;
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+.stagger-child-animations > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-child-animations > *:nth-child(2) { animation-delay: 0.3s; }
+.stagger-child-animations > *:nth-child(3) { animation-delay: 0.4s; }
+.stagger-child-animations > *:nth-child(4) { animation-delay: 0.5s; }
+.stagger-child-animations > *:nth-child(5) { animation-delay: 0.6s; }
+
+.page-wrapper {
+  opacity: 0;
+  animation: pageLoad 0.6s ease-in forwards;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

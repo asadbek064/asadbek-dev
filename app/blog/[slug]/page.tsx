@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { allBlogs } from 'contentlayer/generated';
 import Balancer from 'react-wrap-balancer';
 import { Suspense } from 'react';
-import { Mdx } from 'app/components/mdx';
+import {allBlogs} from "@/.contentlayer/generated";
+import {Mdx} from "@/app/components/mdx";
 
 export async function generateMetadata({
   params,
-}): Promise<Metadata | undefined> {
-  const post = allBlogs.find((post) => post.slug === params.slug);
+}: { params: any }): Promise<Metadata | undefined> {
+  const post = allBlogs.find((post: any) => post.slug === params.slug);
   if (!post) {
     return;
   }
@@ -77,8 +77,8 @@ function formatDate(date: string) {
   return `${fullDate} (${formattedDate})`;
 }
 
-export default async function Blog({ params }) {
-  const post = allBlogs.find((post) => post.slug === params.slug);
+export default async function Blog({ params } : { params: any }) {
+  const post = allBlogs.find((post: any) => post.slug === params.slug);
   if (!post) {
     notFound();
   }
@@ -100,7 +100,7 @@ export default async function Blog({ params }) {
           {formatDate(post.publishedAt)}
         </p>
       </div>
-      <div className="bg-white dark:bg-neutral-900 px-6 lg:px-12 py-2 rounded-sm flex">
+      <div className="bg-white dark:bg-neutral-900 px-6 lg:px-12 py-2 rounded-sm flex pb-8">
         <Mdx code={post.body.code} />
       </div>
     </section>
