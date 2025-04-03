@@ -1,6 +1,4 @@
 import HomeBanner from "./shared/HomeBanner";
-import ProjectList from "./project/project-list";
-import { projects } from "./project/projects";
 import Link from "next/link";
 import { format } from "date-fns";
 import { Timeline } from "./components/timeline";
@@ -14,7 +12,7 @@ export const revalidate = 60;
 export default async function HomePage() {
   const data = [
     {
-      title: "2024 - Present",
+      title: "Present  2024",
       content: (
         <div>
           <h3 className="text-xl font-semibold mb-2">
@@ -25,9 +23,9 @@ export default async function HomePage() {
             of NYC
           </p>
           <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-6">
-            <li>Reduced integration time by 25% with better documentation.</li>
+            <li>Working on R&D, technical documentation, integrations, and customer support.</li>
             <li>
-              <span className="list-disc">Help create a&nbsp;</span>
+              <span className="list-disc">Developed a custom &nbsp;</span>
               <Link
                 className="underline hover:text-blue-400 ease-in duration-100"
                 href={
@@ -46,10 +44,7 @@ export default async function HomePage() {
               Boosted Gitea server performance by 50% through smart caching and
               solving archive overfill issues.
             </li>
-            <li>
-              Resolved over 50 critical technical issues, enhancing system
-              reliability.
-            </li>
+            <li>Resolved 50+ critical technical issues, improving system reliability and uptime.</li>
           </ul>
           <div className="grid grid-cols-2 gap-4">
             <Link href={"https://sheetjs.com/"} target="_blank">
@@ -66,7 +61,7 @@ export default async function HomePage() {
       ),
     },
     {
-      title: "2019 - 2021",
+      title: "2021 2019",
       content: (
         <div>
           <h3 className="text-xl font-semibold mb-2">
@@ -93,7 +88,131 @@ export default async function HomePage() {
       title: "Projects",
       content: (
         <div>
-    <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
+          <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
+            <CardContent className="p-4">
+            <div className="w-full">
+              <div className="flex items-center justify-between mb-2">
+                <Link
+                  className="hover:cursor-pointer"
+                  href={"https://mylinx.cc/"}
+                  target="_blank"
+                >
+                  <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
+                    Mylinx.cc
+                  </h3>
+                </Link>
+
+                <div className="flex gap-3">
+                  <a
+                    href="https://mylinx.cc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                  >
+                    Live
+                  </a>
+              </div>
+
+              </div>
+            </div>
+            
+              <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md font-normal mb-4">
+                Revolutionizing bio pages, URL shorteners, and QR codes.
+              </p>
+              <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-4">
+                <li>Achieved over 2K users and 750K visits</li>
+                <li>Achieved $700+MRR</li>
+                <li>
+                  <span className="list-disc">Features -&nbsp;</span>
+                  <Link
+                    className="underline hover:text-blue-400 ease-in duration-100"
+                    href={"https://mylinx.cc/features"}
+                    target="_blank"
+                  >
+                    See for yourself!
+                  </Link>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
+        <CardContent className="p-6">
+          <div className="flex items-start justify-between">
+            <div className="w-full">
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-xl font-semibold">
+                <a 
+                  href="https://bincode.asadk.dev" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group text-xl font-semibold hover:text-blue-500 transition-colors flex items-center gap-1 hover:underline"
+                >
+                  BinCode
+                </a>
+                </h3>
+                <div className="flex gap-3">
+                  <a
+                    href="https://bincode.asadk.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                  >
+                    Live
+                  </a>
+                  <a
+                    href="https://github.com/asadbek064/bincode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                  >
+                    Source
+                  </a>
+                </div>
+              </div>
+              <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md  font-normal mb-4">
+              Lightweight self-hosted tool for simple, reliable team code sharing without external dependencies.
+                </p>
+              <ul className="list-disc list-inside text-sm text-neutral-600 dark:text-neutral-300">
+                <li>A Complete Self-Hostable JSFiddle Alternative</li>
+                <li>No signups its by design just create users manullay and they can start commits snippets to share</li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+        </Card>
+          <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
+            <CardContent className="p-4">
+              <Link
+                className="hover:cursor-pointer"
+                href={"https://www.anitrek.com/"}
+                target="_blank"
+              >
+                <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
+                  Anitrek.com
+                </h3>
+              </Link>
+              <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md  font-normal mb-4">
+                Innovative anime platform for content discovery and community
+                engagement.
+              </p>
+              <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-4">
+                <li>Attracted 3K+ users and 1.2M searches in 3 months</li>
+                <li>
+                  🔍 <b>Advanced Search</b> Find anime, manga, voices,
+                  characters, and scenes with AI-powered search
+                </li>
+                <li>
+                  📅 <b>Unified Watchlists</b> - Consolidate watchlists across
+                  multiple providers
+                </li>
+                <li>
+                  💬 <b>Interactive Community</b> - Comment engine with
+                  reactions, nested replies, and markdown
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
       <CardContent className="p-6">
         <div className="flex items-start justify-between">
           <div className="w-full">
@@ -134,68 +253,6 @@ export default async function HomePage() {
         </div>
       </CardContent>
     </Card>
-
-          <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
-            <CardContent className="p-4">
-              <Link
-                className="hover:cursor-pointer"
-                href={"https://mylinx.cc/"}
-                target="_blank"
-              >
-                <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
-                  Mylinx.cc
-                </h3>
-              </Link>
-              <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md font-normal mb-4">
-                Revolutionizing bio pages, URL shorteners, and QR codes.
-              </p>
-              <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-4">
-                <li>Achieved over 1K users and 750K visits/month</li>
-                <li>
-                  <span className="list-disc">Features -&nbsp;</span>
-                  <Link
-                    className="underline hover:text-blue-400 ease-in duration-100"
-                    href={"https://mylinx.cc/features"}
-                    target="_blank"
-                  >
-                    See for yourself!
-                  </Link>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
-          <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
-            <CardContent className="p-4">
-              <Link
-                className="hover:cursor-pointer"
-                href={"https://www.anitrek.com/"}
-                target="_blank"
-              >
-                <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
-                  Anitrek.com
-                </h3>
-              </Link>
-              <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md  font-normal mb-4">
-                Innovative anime platform for content discovery and community
-                engagement.
-              </p>
-              <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-4">
-                <li>Attracted 3K+ users and 1.2M searches in 3 months</li>
-                <li>
-                  🔍 <b>Advanced Search</b> Find anime, manga, voices,
-                  characters, and scenes with AI-powered search
-                </li>
-                <li>
-                  📅 <b>Unified Watchlists</b> - Consolidate watchlists across
-                  multiple providers
-                </li>
-                <li>
-                  💬 <b>Interactive Community</b> - Comment engine with
-                  reactions, nested replies, and markdown
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
           <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
             <CardContent className="p-4">
               <Link
@@ -333,7 +390,7 @@ export default async function HomePage() {
           </div>
           <h3 className="text-xl font-semibold mb-4">Awards & Recognitions</h3>
           <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-4">
-            <li>Acknowledged Contributor for CVE-2024-22363 (SheetJS CE)</li>
+            <li><Link href={'https://cdn.sheetjs.com/advisories/CVE-2024-22363'} target="_blank">Acknowledged Contributor for <span className="underline hover:text-blue-400 ease-in duration-100">CVE-2024-22363 (SheetJS CE)</span></Link></li>
           </ul>
         </div>
       ),

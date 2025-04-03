@@ -34,7 +34,7 @@ const computedFields = {
       url: `https://asadk.dev/blog/${doc._raw.flattenedPath}`,
       author: {
         '@type': 'Person',
-        name: 'Lee Robinson',
+        name: 'Asadbek Karimov',
       },
     }),
   },
