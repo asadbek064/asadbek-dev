@@ -5,7 +5,7 @@ import { Timeline } from "./components/timeline";
 import Image from "next/image";
 import { Badge } from "./components/Badge";
 import { Card, CardContent } from "./components/Card";
-import {allBlogs} from "@/.contentlayer/generated";
+import { allBlogs } from "@/.contentlayer/generated";
 
 export const revalidate = 60;
 
@@ -90,32 +90,32 @@ export default async function HomePage() {
         <div>
           <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
             <CardContent className="p-4">
-            <div className="w-full">
-              <div className="flex items-center justify-between mb-2">
-                <Link
-                  className="hover:cursor-pointer"
-                  href={"https://mylinx.cc/"}
-                  target="_blank"
-                >
-                  <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
-                    Mylinx.cc
-                  </h3>
-                </Link>
-
-                <div className="flex gap-3">
-                  <a
-                    href="https://mylinx.cc"
+              <div className="w-full">
+                <div className="flex items-center justify-between mb-2">
+                  <Link
+                    className="hover:cursor-pointer"
+                    href={"https://mylinx.cc/"}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
                   >
-                    Live
-                  </a>
+                    <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
+                      Mylinx.cc
+                    </h3>
+                  </Link>
+
+                  <div className="flex gap-3">
+                    <a
+                      href="https://mylinx.cc"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                    >
+                      Live
+                    </a>
+                  </div>
+
+                </div>
               </div>
 
-              </div>
-            </div>
-            
               <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md font-normal mb-4">
                 Revolutionizing bio pages, URL shorteners, and QR codes.
               </p>
@@ -136,50 +136,50 @@ export default async function HomePage() {
             </CardContent>
           </Card>
           <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
-        <CardContent className="p-6">
-          <div className="flex items-start justify-between">
-            <div className="w-full">
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="text-xl font-semibold">
-                <a 
-                  href="https://bincode.asadk.dev" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group text-xl font-semibold hover:text-blue-500 transition-colors flex items-center gap-1 hover:underline"
-                >
-                  BinCode
-                </a>
-                </h3>
-                <div className="flex gap-3">
-                  <a
-                    href="https://bincode.asadk.dev"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
-                  >
-                    Live
-                  </a>
-                  <a
-                    href="https://github.com/asadbek064/bincode"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
-                  >
-                    Source
-                  </a>
+            <CardContent className="p-6">
+              <div className="flex items-start justify-between">
+                <div className="w-full">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-xl font-semibold">
+                      <a
+                        href="https://bincode.asadk.dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group text-xl font-semibold hover:text-blue-500 transition-colors flex items-center gap-1 hover:underline"
+                      >
+                        BinCode
+                      </a>
+                    </h3>
+                    <div className="flex gap-3">
+                      <a
+                        href="https://bincode.asadk.dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                      >
+                        Live
+                      </a>
+                      <a
+                        href="https://github.com/asadbek064/bincode"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                      >
+                        Source
+                      </a>
+                    </div>
+                  </div>
+                  <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md  font-normal mb-4">
+                    Lightweight self-hosted tool for simple, reliable team code sharing without external dependencies.
+                  </p>
+                  <ul className="list-disc list-inside text-sm text-neutral-600 dark:text-neutral-300">
+                    <li>A Complete Self-Hostable JSFiddle Alternative</li>
+                    <li>No signups its by design just create users manullay and they can start commits snippets to share</li>
+                  </ul>
                 </div>
               </div>
-              <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md  font-normal mb-4">
-              Lightweight self-hosted tool for simple, reliable team code sharing without external dependencies.
-                </p>
-              <ul className="list-disc list-inside text-sm text-neutral-600 dark:text-neutral-300">
-                <li>A Complete Self-Hostable JSFiddle Alternative</li>
-                <li>No signups its by design just create users manullay and they can start commits snippets to share</li>
-              </ul>
-            </div>
-          </div>
-        </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
           <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
             <CardContent className="p-4">
               <Link
@@ -213,81 +213,106 @@ export default async function HomePage() {
             </CardContent>
           </Card>
           <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
-      <CardContent className="p-6">
-        <div className="flex items-start justify-between">
-          <div className="w-full">
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="text-xl font-semibold">
-              <a 
-                href="https://sheetsense.asadk.dev" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group text-xl font-semibold hover:text-blue-500 transition-colors flex items-center gap-1 hover:underline"
-              >
-                SheetSense
-              </a>
-              </h3>
-              <div className="flex gap-3">
-                <a
-                  href="https://sheetsense.asadk.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
-                >
-                  Demo
-                </a>
-                <a
-                  href="https://ezy.ovh/bmicX"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
-                >
-                  Source
-                </a>
+            <CardContent className="p-6">
+              <div className="flex items-start justify-between">
+                <div className="w-full">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-xl font-semibold">
+                      <a
+                        href="https://sheetsense.asadk.dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group text-xl font-semibold hover:text-blue-500 transition-colors flex items-center gap-1 hover:underline"
+                      >
+                        SheetSense
+                      </a>
+                    </h3>
+                    <div className="flex gap-3">
+                      <a
+                        href="https://sheetsense.asadk.dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                      >
+                        Demo
+                      </a>
+                      <a
+                        href="https://ezy.ovh/bmicX"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                      >
+                        Source
+                      </a>
+                    </div>
+                  </div>
+                  <ul className="list-disc list-inside text-sm text-neutral-600 dark:text-neutral-300">
+                    <li>Excel workbook validation engine that detects quality issues, ensures consistency, and makes your spreadsheets bulletproof.</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <ul className="list-disc list-inside text-sm text-neutral-600 dark:text-neutral-300">
-              <li>Excel workbook validation engine that detects quality issues, ensures consistency, and makes your spreadsheets bulletproof.</li>
-            </ul>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
+            </CardContent>
+          </Card>
           <Card className="mb-6 hover:shadow-lg transition-shadow duration-250">
-            <CardContent className="p-4">
-              <Link
-                className="hover:cursor-pointer"
-                href={"https://reactallplayer.asadk.dev/"}
-                target="_blank"
-              >
-                <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
-                  ReactAllPlayer
-                </h3>
-              </Link>
-              <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md font-normal mb-4">
-                Customizable React video player with multi-resolution,
-                streaming, and accessibility support.
-              </p>
-              <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-4">
-                <li>
-                  💪 <b>Accessible</b> – Full support for VTT captions and
-                  screen readers
-                </li>
-                <li>
-                  🔧 <b>Customizable</b> – Design your player with flexible
-                  markup
-                </li>
-                <li>
-                  📱 <b>Responsive</b> – Adapts seamlessly to any screen size
-                </li>
-                <li>
-                  📹 <b>Streaming</b> – Supports hls.js and dash.js playback
-                </li>
-                <li>
-                  🔎 <b>Fullscreen</b> – Native fullscreen with "full window"
-                  fallback
-                </li>
-              </ul>
+            <CardContent className="p-6">
+              <div className="flex items-start justify-between">
+                <div className="w-full">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-xl font-semibold">
+                      <a
+                        href="https://reactallplayer.asadk.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group text-xl font-semibold hover:text-blue-500 transition-colors flex items-center gap-1 hover:underline"
+                      >
+                        ReactAllPlayer
+                      </a>
+                    </h3>
+                    <div className="flex gap-3">
+                      <a
+                        href="https://reactallplayer.asadk.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                      >
+                        Demo
+                      </a>
+                      <a
+                        href="https://github.com/asadbek064/react-all-player"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                      >
+                        Source
+                      </a>
+                    </div>
+                  </div>
+                  <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md font-normal mb-4">
+                    Customizable React video player with multi-resolution,
+                    streaming, and accessibility support.
+                  </p>
+                  <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm mb-4">
+                    <li>
+                      💪 <b>Accessible</b> – Full support for VTT captions and
+                      screen readers
+                    </li>
+                    <li>
+                      🔧 <b>Customizable</b> – Design your player with flexible
+                      markup
+                    </li>
+                    <li>
+                      📱 <b>Responsive</b> – Adapts seamlessly to any screen size
+                    </li>
+                    <li>
+                      📹 <b>Streaming</b> – Supports hls.js and dash.js playback
+                    </li>
+                    <li>
+                      🔎 <b>Fullscreen</b> – Native fullscreen with "full window"
+                      fallback
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
@@ -409,28 +434,28 @@ export default async function HomePage() {
 
           <div className={"stagger-child-animations"}>
             {allBlogs
-                .sort((a, b) => {
-                  if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
-                    return -1;
-                  }
-                  return 1;
-                })
-                .map((post) => (
-                    <Link
-                        key={post.slug}
-                        className="flex flex-col space-y-2 mb-6 p-6 bg-white rounded-md hover:shadow-md border border-transparent duration-200 ease-in  hover:border-gray-400 hover:bg-gray-100  dark:bg-transparent dark:hover:bg-neutral-900 transition"
-                        href={`/blog/${post.slug}`}
-                    >
-                      <div className="w-full flex flex-col">
-                        <div className="text-neutral-900 dark:text-neutral-100 tracking-tight [font-size:var(--step-1)]">
-                          {post.title}
-                        </div>
-                        <div className="text-sm text-neutral-500 dark:text-neutral-400">
-                          {format(new Date(post.publishedAt), "MMMM dd, yyyy")}
-                        </div>
-                      </div>
-                    </Link>
-                ))}
+              .sort((a, b) => {
+                if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
+                  return -1;
+                }
+                return 1;
+              })
+              .map((post) => (
+                <Link
+                  key={post.slug}
+                  className="flex flex-col space-y-2 mb-6 p-6 bg-white rounded-md hover:shadow-md border border-transparent duration-200 ease-in  hover:border-gray-400 hover:bg-gray-100  dark:bg-transparent dark:hover:bg-neutral-900 transition"
+                  href={`/blog/${post.slug}`}
+                >
+                  <div className="w-full flex flex-col">
+                    <div className="text-neutral-900 dark:text-neutral-100 tracking-tight [font-size:var(--step-1)]">
+                      {post.title}
+                    </div>
+                    <div className="text-sm text-neutral-500 dark:text-neutral-400">
+                      {format(new Date(post.publishedAt), "MMMM dd, yyyy")}
+                    </div>
+                  </div>
+                </Link>
+              ))}
           </div>
         </div>
       </div>

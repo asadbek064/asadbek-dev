@@ -43,8 +43,9 @@ const HomeBanner = ({}) => {
                 <Link className="underline hover:text-blue-500" href={'https://sheetjs.com/'}>SheetJS.</Link>
             </div>
             <hr className="my-12 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
-            <div className="text-gray-600 dark:text-white font-light md:text-lg ">Software Engineer 📊 at <Link href={'https://sheetjs.com/'} className="underline">sheetjs.com </Link>| R&D, docs & integrations | <Link href={'mylinx.cc'} className="underline">mylinx.cc</Link> creator 🔗 |  Sheetlang ·👨‍🔬 Architect. I am passionate about solving tricky problems, optimizing data, and working with <span className="font-bold">data toolkits.</span></div>
-        </div>
+            <div className="text-gray-600 dark:text-white font-light md:text-lg">
+                Creator of <Link href={'https://mylinx.cc'} className="underline">mylinx.cc</Link> 🔗 | Sheetlang 👨‍🔬 Architect | I am passionate about solving tricky problems, optimizing data workflows, and building powerful <span className="font-bold">data toolkits</span>.
+            </div>        </div>
         </section>
     );
 }
