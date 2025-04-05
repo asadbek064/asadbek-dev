@@ -1,0 +1,53 @@
+---
+title: 'Parsing Nightmares'
+publishedAt: '2025-04-05'
+summary: 'A brief look at the challenge of handling context-sensitive keywords while rebuilding Stata in JavaScript using Chevrotain, and some potential solutions without diving too deep.'
+---
+
+Lately, I've been diving deep into the world of parser and [tokenizers](https://en.wikipedia.org/wiki/Lexical_analysis),
+attempting to rebuild [Stata](https://www.stata.com/) from scratch in JavaScript using [Chevrotain](https://chevrotain.io/docs/).
+It's been an exciting yet incredibly frustrating journey, and I've hit a roadblock that has me questioning my life choices.
+
+
+## The Problem: Context-Sensitive Keywords.
+In [Stata](https://www.stata.com/), it’s perfectly acceptable for command names to double as variable names. Consider this simple example:
+
+```stata
+generate generate = 2
+```
+
+Here, the first `generate` is a command, while the second is simply a variable name. This kind of flexibility is intuitive
+for us humans, but it can turn into a real headache for a parser.
+
+In my initial implementation, I ran into two major issues:
+
+1. My token definitions were matching command keywords like `generate` indiscriminately, regardless of context.
+
+2. The command tokens were checked before identifier tokens in my lexer's order of precedence.
+
+This created a impossible situation where the parser couldn't distinguish between commands and identifiers with
+the same name.
+
+## I'm not Alone
+
+After some digging through parsing forums and documentation, I discovered that this isn’t an isolated problem. Many
+language implementers have wrestled with context-sensitive keywords. The common solutions often involve elaborate
+workarounds ranging from context-tracking mechanisms to entirely separate parsing passes.
+
+
+## Some Suggested Solutions:
+
+
+### Token Precedence
+Unfortunately, with my current Chevrotain setup, reordering token precedence isn’t feasible because Chevrotain is a
+parser generator library for JS that uses LL(k) parsing techniques.
+
+
+**LL(k) parsing techniques**
+
+<Image
+  alt={`simple diagram how LL(k) parser works!`}
+  src={`/images/parsing_nightmares/LL_K_diagram.png`}
+  width={900}
+  height={600}
+/>

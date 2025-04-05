@@ -39,7 +39,7 @@ const HomeBanner = ({}) => {
                 Asad Karimov
             </div>
             <div className="text-gray-600 dark:text-white font-light md:text-lg">
-                <span>Writing code at&nbsp;</span>
+                <span>Lead Engineer at&nbsp;</span>
                 <Link className="underline hover:text-blue-500" href={'https://sheetjs.com/'}>SheetJS.</Link>
             </div>
             <hr className="my-12 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />

@@ -22,8 +22,16 @@ const CustomLink = (props: any) => {
   return <a target="_blank" rel="noopener noreferrer" {...props} />;
 };
 
-function RoundedImage(props : any) {
-  return <Image alt={props.alt} className="rounded-lg" {...props} />;
+function RoundedImage(props: any) {
+  return (
+    <div className="my-6 w-full flex justify-center">
+      <Image 
+        alt={props.alt} 
+        className="rounded-lg max-w-full h-auto" 
+        {...props} 
+      />
+    </div>
+  );
 }
 
 function Callout(props: any) {
@@ -105,7 +113,7 @@ export function Mdx({ code }: MdxProps) {
     const Component = useMDXComponent(code);
 
     return (
-        <article className="prose prose-quoteless prose-neutral dark:prose-invert">
+        <article className="prose prose-quoteless prose-neutral dark:prose-invert max-w-none w-full prose-img:mx-auto prose-pre:overflow-auto">
             <Component components={{ ...components }} />
         </article>
     );
