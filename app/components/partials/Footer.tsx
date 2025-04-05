@@ -1,9 +1,9 @@
 import { AiFillGithub } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import {FaBluesky} from "react-icons/fa6";
+import { FaBluesky } from "react-icons/fa6";
 
-const Footer = ({}) => {
+const Footer = ({ }) => {
     return (
         <div>
             <div className="w-full"></div>
@@ -13,22 +13,27 @@ const Footer = ({}) => {
                     <div className="flex flex-row space-x-5 text-neutral-500  dark:text-neutral-200 transition">
                         <div className="hover:text-neutral-900 duration-100 dark:hover:text-blue-400 cursor-pointer">
                             <a href="mailto:contact@asadk.dev">
-                                <MdEmail className="h-8 w-8"/>
+                                <MdEmail className="h-8 w-8" />
                             </a>
                         </div>
                         <div className="hover:text-neutral-900 duration-100 dark:hover:text-blue-400 cursor-pointer">
                             <a href="https://github.com/asadbek064">
-                                <AiFillGithub className="h-8 w-8"/>
+                                <AiFillGithub className="h-8 w-8" />
                             </a>
                         </div>
                         <div className="hover:text-neutral-900 duration-100 dark:hover:text-blue-400 cursor-pointer">
                             <a href="https://twitter.com/realAsadbek">
-                                <FaTwitter className="h-8 w-8"/>
+                                <FaTwitter className="h-8 w-8" />
                             </a>
                         </div>
                         <div className="hover:text-neutral-900 duration-100 dark:hover:text-blue-400 cursor-pointer">
                             <a href="https://bsky.app/profile/asabekkarimov.bsky.social">
-                                <FaBluesky className="h-8 w-8"/>
+                                <FaBluesky className="h-8 w-8" />
+                            </a>
+                        </div>
+                        <div className="hover:text-neutral-800 duration-100 dark:hover:text-blue-400 cursor-pointer">
+                            <a target="_blank" href="https://mylinx.cc/asad">
+                                <img src="./images/mylinx-logo-square.svg" className='h-8 w-8  rounded-sm cursor-pointer' />
                             </a>
                         </div>
                     </div>

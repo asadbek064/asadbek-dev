@@ -107,7 +107,7 @@ export default async function HomePage() {
                       href="https://mylinx.cc"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                      className="text-sm text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                     >
                       Live
                     </a>
@@ -155,7 +155,7 @@ export default async function HomePage() {
                         href="https://bincode.asadk.dev"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                        className="text-sm text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                       >
                         Live
                       </a>
@@ -163,7 +163,7 @@ export default async function HomePage() {
                         href="https://github.com/asadbek064/bincode"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                        className="text-sm text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                       >
                         Source
                       </a>
@@ -232,7 +232,7 @@ export default async function HomePage() {
                         href="https://sheetsense.asadk.dev"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                        className="text-sm text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                       >
                         Demo
                       </a>
@@ -240,7 +240,7 @@ export default async function HomePage() {
                         href="https://ezy.ovh/bmicX"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                        className="text-sm text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                       >
                         Source
                       </a>
@@ -273,15 +273,15 @@ export default async function HomePage() {
                         href="https://reactallplayer.asadk.dev/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                        className="text-sm text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                       >
-                        Demo
+                        Live
                       </a>
                       <a
                         href="https://github.com/asadbek064/react-all-player"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-neutral-600 hover:text-blue-500 transition-colors flex items-center gap-1"
+                        className="text-sm text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                       >
                         Source
                       </a>
