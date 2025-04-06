@@ -7,7 +7,12 @@ import { Analytics } from '@vercel/analytics/react';
 import Footer from './components/partials/Footer';
 import Script from 'next/script';
 import PageTransition from "@/app/components/PageTransition";
+import dynamic from 'next/dynamic';
 
+const ShaderBackground = dynamic(
+  () => import('./components/ShaderBackground'),
+  { ssr: false }
+);
 
 const kaisei = localFont({
   src: '../public/fonts/kaisei-tokumin-latin-700-normal.woff2',
@@ -79,9 +84,13 @@ export default function RootLayout({
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window, document, "clarity", "script", "ne4floxof2"); `}
         </Script>
+        
       </head>
 
       <body className="antialiased max-w-4xl mb-20 flex flex-col mx-4 mt-8  lg:mt-32 md:mx-auto lg:mx-auto ">
+      <div className="hidden md:block">
+        <ShaderBackground />
+      </div>
         <Sidebar />
         <main className="flex-auto min-w-0 mt-12 md:mt-12 flex flex-col px-2 md:px-0">
             <PageTransition>

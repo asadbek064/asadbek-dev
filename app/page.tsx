@@ -12,7 +12,7 @@ export const revalidate = 60;
 export default async function HomePage() {
   const data = [
     {
-      title: "Present  2024",
+      title: "2024 - Present",
       content: (
         <div>
           <h3 className="text-xl font-semibold mb-2">
@@ -25,7 +25,7 @@ export default async function HomePage() {
           <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mb-6">
             <li>Working on R&D, technical documentation, integrations, and customer support.</li>
             <li>
-              <span className="list-disc">Developed a custom &nbsp;</span>
+              <span className="list-disc">Developed a custom&nbsp;</span>
               <Link
                 className="underline hover:text-blue-400 ease-in duration-100"
                 href={
@@ -61,7 +61,7 @@ export default async function HomePage() {
       ),
     },
     {
-      title: "2021 2019",
+      title: "2019 - 2021",
       content: (
         <div>
           <h3 className="text-xl font-semibold mb-2">
@@ -174,7 +174,7 @@ export default async function HomePage() {
                   </p>
                   <ul className="list-disc list-inside text-sm text-neutral-600 dark:text-neutral-300">
                     <li>A Complete Self-Hostable JSFiddle Alternative</li>
-                    <li>No signups its by design just create users manullay and they can start commits snippets to share</li>
+                    <li>No signups it's by design just create users manually and they can start committing snippets to share</li>
                   </ul>
                 </div>
               </div>
@@ -247,7 +247,7 @@ export default async function HomePage() {
                     </div>
                   </div>
                   <ul className="list-disc list-inside text-sm text-neutral-600 dark:text-neutral-300">
-                    <li>Excel workbook validation engine that detects quality issues, ensures consistency, and makes your spreadsheets bulletproof.</li>
+                    <li>Excel workbook validation engine that detects quality issues, ensures consistency and makes your spreadsheets bulletproof.</li>
                   </ul>
                 </div>
               </div>
