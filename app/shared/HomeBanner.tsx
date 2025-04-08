@@ -48,7 +48,7 @@ const HomeBanner = ({ }) => {
                 </div>
                 <hr className="my-12 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
                 <div className="text-gray-600 dark:text-white font-light md:text-lg">
-                    Creator of <Link href={'https://mylinx.cc'} className="underline">mylinx.cc</Link> 🔗 | Sheetlang 👨‍🔬 Architect | I am passionate about solving tricky problems, optimizing data workflows, and building powerful <span className="font-bold">data toolkits</span>.
+                    Creator of <Link href={'https://mylinx.cc'} className="underline">mylinx.cc</Link> 🔗 | 👨‍🔬 Architect | I am passionate about solving tricky problems, optimizing data workflows, and building powerful <span className="font-bold">data toolkits</span>.
                 </div>        </div>
         </section>
     );
