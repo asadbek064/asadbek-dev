@@ -1,11 +1,11 @@
 import { AiFillGithub } from "react-icons/ai";
-import { FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaBluesky } from "react-icons/fa6";
+import { FaBluesky, FaXTwitter } from "react-icons/fa6";
+import { SiGitea } from "react-icons/si";
 
 const Footer = ({ }) => {
     return (
-        <div>
+        <div className="mt-2">
             <div className="w-full"></div>
 
             <div className="flex flex-col space-y-8 md:space-y-2 md:flex-row md:justify-between my-6">
@@ -17,13 +17,18 @@ const Footer = ({ }) => {
                             </a>
                         </div>
                         <div className="hover:text-neutral-900 duration-100 dark:hover:text-blue-400 cursor-pointer">
+                            <a href="https://git.sheetjs.com/asadbek064">
+                                <SiGitea className="h-8 w-8" />
+                            </a>
+                        </div>
+                        <div className="hover:text-neutral-900 duration-100 dark:hover:text-blue-400 cursor-pointer">
                             <a href="https://github.com/asadbek064">
                                 <AiFillGithub className="h-8 w-8" />
                             </a>
                         </div>
                         <div className="hover:text-neutral-900 duration-100 dark:hover:text-blue-400 cursor-pointer">
                             <a href="https://twitter.com/realAsadbek">
-                                <FaTwitter className="h-8 w-8" />
+                                <FaXTwitter className="h-8 w-8" />
                             </a>
                         </div>
                         <div className="hover:text-neutral-900 duration-100 dark:hover:text-blue-400 cursor-pointer">

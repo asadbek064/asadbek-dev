@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
-import { FaTwitter } from "react-icons/fa";
 import { FaDev } from "react-icons/fa";
-import { FaBluesky } from "react-icons/fa6";
+import { FaBluesky, FaXTwitter } from "react-icons/fa6";
+import { SiGitea } from "react-icons/si";
 
 const HomeBanner = ({ }) => {
     return (
@@ -10,6 +10,11 @@ const HomeBanner = ({ }) => {
             <div className="flex flex-col space-y-5">
                 <div className="flex justify-end">
                     <div className="flex flex-row space-x-3 text-neutral-500 transition  animate fadeInRight">
+                        <div className="hover:text-neutral-800 duration-100 dark:hover:text-blue-400 cursor-pointer">
+                            <a target="_blank" href="https://git.sheetjs.com/asadbek064">
+                                <SiGitea className="h-5 w-5" />
+                            </a>
+                        </div>
                         <div className="hover:text-neutral-800 duration-100 dark:hover:text-blue-400 cursor-pointer">
                             <a target="_blank" href="https://github.com/asadbek064">
                                 <AiFillGithub className="h-5 w-5" />
@@ -27,7 +32,7 @@ const HomeBanner = ({ }) => {
                         </div>
                         <div className="hover:text-neutral-800 duration-100 dark:hover:text-blue-400 cursor-pointer">
                             <a target="_blank" href="https://x.com/realasadbek">
-                                <FaTwitter className="h-5 w-5" />
+                                <FaXTwitter className="h-5 w-5" />
                             </a>
                         </div>
                         <div className="hover:text-neutral-800 duration-100 dark:hover:text-blue-400 cursor-pointer">
@@ -47,8 +52,8 @@ const HomeBanner = ({ }) => {
                     <Link className="underline hover:text-blue-500" href={'https://sheetjs.com/'}>SheetJS.</Link>
                 </div>
                 <hr className="my-12 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
-                <div className="text-gray-600 dark:text-white font-light md:text-lg">
-                    Creator of <Link href={'https://mylinx.cc'} className="underline">mylinx.cc</Link> 🔗 | 👨‍🔬 Architect | I am passionate about solving tricky problems, optimizing data workflows, and building powerful <span className="font-bold">data toolkits</span>.
+                <div className="text-gray-600 dark:text-white font-light md:text-xl">
+                    Creator of <Link href={'https://mylinx.cc'} className="underline hover:cursor-pointer hover:text-blue-500">mylinx.cc</Link> 🔗 | Data science in JS? | I am passionate about solving tricky problems, optimizing data workflows, and building powerful <span className="font-bold">data toolkits</span>.
                 </div>        </div>
         </section>
     );
