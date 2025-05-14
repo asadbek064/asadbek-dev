@@ -9,6 +9,7 @@ const nextConfig = {
       'i.scdn.co',
       'pbs.twimg.com',
       'cdn.sanity.io',
+      'git.sheetjs.com'
     ],
   },
   experimental: {

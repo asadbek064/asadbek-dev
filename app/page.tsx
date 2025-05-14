@@ -107,7 +107,7 @@ export default async function HomePage() {
                       href="https://mylinx.cc"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
+                      className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                     >
                       Live
                     </a>
@@ -155,7 +155,7 @@ export default async function HomePage() {
                         href="https://bincode.asadk.dev"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
+                        className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                       >
                         Live
                       </a>
@@ -163,7 +163,7 @@ export default async function HomePage() {
                         href="https://github.com/asadbek064/bincode"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
+                        className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                       >
                         Source
                       </a>
@@ -182,15 +182,38 @@ export default async function HomePage() {
           </Card>
           <Card className="mb-6 transition-shadow duration-250">
             <CardContent className="p-4">
-              <Link
-                className="hover:cursor-pointer"
-                href={"https://www.anitrek.com/"}
-                target="_blank"
-              >
-                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
-                  Anitrek.com
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">
+                  <a
+                    href="https://anitrek.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group font-semibold hover:text-blue-500 transition-colors flex items-center gap-1 hover:underline"
+                  >
+                    Anitrek.com
+                  </a>
                 </h3>
-              </Link>
+                <div className="flex gap-3">
+                  <a
+                    href="https://anitrek.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
+                  >
+                    Live
+                  </a>
+                  <a
+                    href="https://github.com/asadbek064/anitrek-client"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
+                  >
+                    Source
+                  </a>
+
+                </div>
+              </div>
+
               <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
                 Innovative anime platform for content discovery and community
                 engagement.
@@ -213,6 +236,68 @@ export default async function HomePage() {
             </CardContent>
           </Card>
           <Card className="mb-6 transition-shadow duration-250">
+            <CardContent className="p-4">
+              <div className="w-full">
+                <div className="flex items-center justify-between mb-2">
+                  <Link
+                    className="hover:cursor-pointer"
+                    href={"https://marketplace.visualstudio.com/items?itemName=asadbek.sheetjs-demo"}
+                    target="_blank"
+                  >
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
+                      VSCode Spreadsheet Viewer
+                    </h3>
+                  </Link>
+                  <div className="flex gap-3">
+                    <a
+                      href="https://marketplace.visualstudio.com/items?itemName=asadbek.sheetjs-demo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
+                    >
+                      Marketplace
+                    </a>
+                    <a
+                      href="https://git.sheetjs.com/asadbek064/sheetjs-vscode-extension"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
+                    >
+                      Source
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
+                Powered by SheetJS, a powerful VSCode extension that lets you view spreadsheets right in your editor. Works with XLSX, XLS, CSV, ODS and 30+ other formats.
+              </p>
+              <div className="my-4 sm:block hidden">
+                <Image
+                  src="https://git.sheetjs.com/asadbek064/sheetjs-vscode-extension/raw/branch/main/asset/sheetjs-vscode-extension-demo.gif"
+                  alt="Queens College Campus"
+                  width={400}
+                  height={400}
+                  className="rounded-lg object-cover w-full shadow-lg hover:cursor-pointer"
+                />
+
+              </div>
+              <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg mb-4">
+                <li>
+                  <b>Multi-level Caching</b> - Workbook cache prevents redundant parsing of the same files
+                </li>
+                <li>
+                  <b>Smart Loading Strategy</b> - First sheet loads immediately for instant feedback
+                </li>
+                <li>
+                  <b>Responsive Interface</b> - Loading indicators and state persistence across views
+                </li>
+                <li>
+                  <b>Format Support</b> - Works with 30+ spreadsheet formats including XLSX, CSV, ODS
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+          {/* <Card className="mb-6 transition-shadow duration-250">
             <CardContent className="p-6">
               <div className="flex items-start justify-between">
                 <div className="w-full">
@@ -252,7 +337,7 @@ export default async function HomePage() {
                 </div>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
           <Card className="mb-6 transition-shadow duration-250">
             <CardContent className="p-6">
               <div className="flex items-start justify-between">
@@ -273,7 +358,7 @@ export default async function HomePage() {
                         href="https://reactallplayer.asadk.dev/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
+                        className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                       >
                         Live
                       </a>
@@ -281,7 +366,7 @@ export default async function HomePage() {
                         href="https://github.com/asadbek064/react-all-player"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
+                        className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
                       >
                         Source
                       </a>
