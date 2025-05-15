@@ -6,8 +6,7 @@ import Image from "next/image";
 import { Badge } from "./components/Badge";
 import { Card, CardContent } from "./components/Card";
 import { allBlogs } from "@/.contentlayer/generated";
-
-export const revalidate = 60;
+import ReactAllPlayerDemo from "./components/ReactAllPlayerDemo";
 
 export default async function HomePage() {
   const data = [
@@ -273,8 +272,9 @@ export default async function HomePage() {
               </p>
               <div className="my-4 sm:block hidden">
                 <Image
+                  unoptimized
                   src="https://git.sheetjs.com/asadbek064/sheetjs-vscode-extension/raw/branch/main/asset/sheetjs-vscode-extension-demo.gif"
-                  alt="Queens College Campus"
+                  alt="VSCode Spreadsheet viewer extension"
                   width={400}
                   height={400}
                   className="rounded-lg object-cover w-full shadow-lg hover:cursor-pointer"
@@ -371,6 +371,9 @@ export default async function HomePage() {
                         Source
                       </a>
                     </div>
+                  </div>
+                  <div className="my-4 sm:block hidden">
+                    <ReactAllPlayerDemo />
                   </div>
                   <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
                     Customizable React video player with multi-resolution,

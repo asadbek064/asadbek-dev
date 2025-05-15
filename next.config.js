@@ -5,11 +5,12 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: [
-      'i.scdn.co',
-      'pbs.twimg.com',
-      'cdn.sanity.io',
-      'git.sheetjs.com'
+    remotePatterns: [
+      { hostname: 'i.scdn.co' },
+      { hostname: 'pbs.twimg.com' },
+      { hostname: 'cdn.sanity.io' },
+      { hostname: 'git.sheetjs.com' },
+      { hostname: 'pub-1ee15f86c7e94066bcff56e6e7ce5c02.r2.dev' }
     ],
   },
   experimental: {
