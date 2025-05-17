@@ -20,9 +20,6 @@ importers:
       '@tabler/icons-react':
         specifier: ^3.30.0
         version: 3.30.0(react@18.3.1)
-      '@vercel/analytics':
-        specifier: ^1.5.0
-        version: 1.5.0(next@14.2.24(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@vercel/edge-config':
         specifier: ^1.4.0
         version: 1.4.0(@opentelemetry/api@1.9.0)
@@ -66,8 +63,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1
       react-all-player:
-        specifier: ^2.0.8
-        version: 2.0.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^2.0.10
+        version: 2.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
@@ -791,32 +788,6 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
-
-  '@vercel/analytics@1.5.0':
-    resolution: {integrity: sha512-MYsBzfPki4gthY5HnYN7jgInhAZ7Ac1cYDoRWFomwGHWEX7odTEzbtg9kf/QSo7XEsEAqlQugA6gJ2WS2DEa3g==}
-    peerDependencies:
-      '@remix-run/react': ^2
-      '@sveltejs/kit': ^1 || ^2
-      next: '>= 13'
-      react: ^18 || ^19 || ^19.0.0-rc
-      svelte: '>= 4'
-      vue: ^3
-      vue-router: ^4
-    peerDependenciesMeta:
-      '@remix-run/react':
-        optional: true
-      '@sveltejs/kit':
-        optional: true
-      next:
-        optional: true
-      react:
-        optional: true
-      svelte:
-        optional: true
-      vue:
-        optional: true
-      vue-router:
-        optional: true
 
   '@vercel/edge-config-fs@0.1.0':
     resolution: {integrity: sha512-NRIBwfcS0bUoUbRWlNGetqjvLSwgYH/BqKqDN7vK1g32p7dN96k0712COgaz6VFizAm9b0g6IG6hR6+hc0KCPg==}
@@ -1987,8 +1958,8 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  react-all-player@2.0.8:
-    resolution: {integrity: sha512-8gL0xcfiVmoWlOyr2jPLQp+K3mRg5W0IqdM/mp7dFBcpGfLiwIc1ME5mFJEu8wLWKN23WxmbBbwRAs2KGO3rRQ==}
+  react-all-player@2.0.10:
+    resolution: {integrity: sha512-J0auAZ6jkZ0AqNy26suCAmTUm21k6448bB+kpcL0aN4lVqMBcuqozuHmjGvCIRlGvQfEl1xko90hmqzS2IDFFw==}
     engines: {node: '>=10'}
     peerDependencies:
       react: '>=16'
@@ -3094,11 +3065,6 @@ snapshots:
   '@types/unist@3.0.3': {}
 
   '@ungap/structured-clone@1.3.0': {}
-
-  '@vercel/analytics@1.5.0(next@14.2.24(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
-    optionalDependencies:
-      next: 14.2.24(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react: 18.3.1
 
   '@vercel/edge-config-fs@0.1.0': {}
 
@@ -4696,7 +4662,7 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-all-player@2.0.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-all-player@2.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@plussub/srt-vtt-parser': 1.1.3
       load-script: 2.0.0

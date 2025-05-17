@@ -29,7 +29,7 @@ export default function ReactAllPlayerDemo() {
                 file: 'https://ezy.ovh/cQLFa',
                 },
             ]}
-            // TODO: issue in player thumbnail="https://pub-1ee15f86c7e94066bcff56e6e7ce5c02.r2.dev/View_From_A_Blue_Moon_Trailer-HD.jpg"
+            poster="https://pub-1ee15f86c7e94066bcff56e6e7ce5c02.r2.dev/View_From_A_Blue_Moon_Trailer-HD.jpg"
 />
     )
 }

@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Sidebar from '../components/sidebar';
-import { Analytics } from '@vercel/analytics/react';
 import Footer from './components/partials/Footer';
 import Script from 'next/script';
 import PageTransition from "@/app/components/PageTransition";
@@ -29,14 +28,14 @@ export const metadata: Metadata = {
   description: 'Software Engineer | Creator of Mylinx.cc ✨ NYC ',
   openGraph: {
     title: 'Asadbek Karimov',
-    description: 'Developer, and creator.',
+    description: 'Creator of mylinx.cc 🔗 | Data science in JS? | I am passionate about solving tricky problems, optimizing data workflows, and building powerful data toolkits.',
     url: 'https://asadk.dev',
     siteName: 'Asad Karimov',
     images: [
       {
-        url: 'https://asadk.dev/og-bg.png',
-        width: 1920,
-        height: 1080,
+        url: 'https://asadk.dev/asadbek-karimov-og.png',
+        width: 1200,
+        height: 630,
       },
     ],
     locale: 'en-US',
@@ -97,7 +96,6 @@ export default function RootLayout({
               {children}
             </PageTransition>
           <Footer />
-          <Analytics />
         </main>
       </body>
     </html>
