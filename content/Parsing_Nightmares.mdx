@@ -4,7 +4,7 @@ publishedAt: '2025-04-05'
 summary: 'A brief look at the challenge of handling context-sensitive keywords while rebuilding Stata in JavaScript using Chevrotain, and some potential solutions without diving too deep.'
 ---
 
-Lately, I've been diving deep into the world of parser and [tokenizers](https://en.wikipedia.org/wiki/Lexical_analysis), attempting to rebuild [Stata](https://www.stata.com/) from scratch in JavaScript using [Chevrotain](https://chevrotain.io/docs/). It's been an exciting yet incredibly frustrating journey, and I've hit a roadblock that has me questioning my life choices.
+Lately, I've been diving deep into the world of parsers and [tokenizers](https://en.wikipedia.org/wiki/Lexical_analysis), attempting to rebuild [Stata](https://www.stata.com/) from scratch in JavaScript using [Chevrotain](https://chevrotain.io/docs/). It's been an exciting yet incredibly frustrating journey, and I've hit a roadblock that has me questioning my life choices.
 
 ## The Problem: Context-Sensitive Keywords
 
@@ -14,7 +14,7 @@ In [Stata](https://www.stata.com/), it's perfectly acceptable for command names 
 generate generate = 2
 ```
 ```js
-// example in js 
+// example in js
 var var = 2; // not valid
 ```
 
@@ -41,13 +41,13 @@ Unfortunately, with my current Chevrotain setup, reordering token precedence isn
   height={600}
 />
 
-- **top-down parser** - starts with start symbol on stack, and repeatedly replace nonterminals until string is generated.
+- **top-down parser** - starts with the start symbol on the stack, and repeatedly replaces nonterminals until the string is generated.
 - **predictive parser** - predict next rewrite rule
 - **first L of LL means** - read input string left to right
 - **second L of LL means** - produces leftmost derivation
 - **k** - number of lookahead symbols
 
-It provides tools for building recursive-descent parser with full control over grammar definitions. This doesn't mean it can't handle token precedence—it definitely can—but it requires manual implementation, which involves considerable effort.
+It provides tools for building a recursive-descent parser with full control over grammar definitions. This doesn't mean it can't handle token precedence—it definitely can—but it requires manual implementation, which involves considerable effort.
 
 ### Contextual Parsing
 
@@ -58,3 +58,23 @@ Chevrotain has built in support for contextual tokens. We could define our keywo
 This is one is an interesting one—post-lexing examines the token stream and reclassifies command tokens to identifiers based on their syntactic position.
 
 Each of these methods has its merits and its tradeoffs. If anyone has tackled this issue from a different angle or has additional suggestions, I'd love to hear your thoughts.
+
+---
+### UPDATE:
+After careful consideration, I went with the post-lexing token transformation approach. This solution proved to be the most practical for several reasons:
+
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v50s48tktthqzyot6ygh.png)
+
+
+
+1. **Low overhead** - it doesn't require modifying the core lexer or parser implementation
+
+2. **Easy to maintain** - Solution is isolated in a single processing step before lexing and parsing
+
+3. **Minimal complexity** - No need for complex state machines or multiple parsing passes
+
+4. **Predictable behavior** - Context-based token reclassification follows clear, documented rules
+
+
+The key insight was that context sensitivity could be handled by examining token patterns after initial lexing. This approach effectively solves the "generate generate = 1" problem with remarkably little code.

@@ -84,7 +84,7 @@ export default function MePage() {
                         <ArrowIcon/>
                     </a>
                 </div>
-                <div className="flex flex-col gap-2 md:flex-row md:gap-2 mt-4 animate ease-in">
+{/*                 <div className="flex flex-col gap-2 md:flex-row md:gap-2 mt-4 animate ease-in">
                     <a
                         onClick={openModal}
                         className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between cursor-pointer"
@@ -119,7 +119,7 @@ export default function MePage() {
                             </div>
                         </div>
                     )}
-                </div>
+                </div> */}
             </div>
 
             {/* Inject Calendly stylesheet and script */}
