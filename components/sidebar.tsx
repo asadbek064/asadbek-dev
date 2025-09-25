@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <div className="" >
       <div className="flex md:justify-end justify-start">
-        
+
         <LayoutGroup>
           <nav
             className="flex flex-row items-start relative px-4 md:px-0 pb-0 fade  scroll-pr-6"
@@ -47,10 +47,10 @@ export default function Navbar() {
                     key={path}
                     href={path}
                     className={clsx(
-                      'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle',
+                      'transition-all flex items-center hover:text-neutral-500 dark:hover:text-neutral-200 cursor-pointer',
                       {
-                        'text-neutral-500': !isActive,
-                        'font-medium ': isActive,
+                        'text-neutral-900 dark:text-neutral-200 font-medium': isActive,
+                        'text-neutral-800 dark:text-neutral-500': !isActive,
                       }
                     )}
                   >

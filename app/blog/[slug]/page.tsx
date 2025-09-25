@@ -103,7 +103,6 @@ export default async function Blog({ params }: { params: any }) {
       </div>
       <div className="bg-white dark:bg-neutral-900 px-4 sm:px-6 lg:px-8 py-6 rounded-lg shadow-sm w-full">
         <Mdx code={post.body.code} />
-        
         <Comments slug={post.slug} />
       </div>
     </section>

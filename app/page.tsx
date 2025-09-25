@@ -443,7 +443,7 @@ export default async function HomePage() {
               "Software Engineering",
               "Big Data Analytics",
             ].map((lang) => (
-              <Badge className="text-xs sm:text-sm md:text-base" key={lang} variant="outline">
+              <Badge className="text-xs sm:text-sm md:text-base dark:text-neutral-100 text-neutral-800" key={lang} variant="outline">
                 {lang}
               </Badge>
             ))}
@@ -475,7 +475,7 @@ export default async function HomePage() {
                   "CSS",
                   "HTML",
                 ].map((lang) => (
-                  <Badge className="text-xs sm:text-sm md:text-base" key={lang} variant="outline">
+                  <Badge className="text-xs sm:text-sm md:text-base dark:text-neutral-100 text-neutral-800" key={lang} variant="outline">
                     {lang}
                   </Badge>
                 ))}
@@ -494,7 +494,7 @@ export default async function HomePage() {
                   "TailwindCSS",
                   "Chakra UI",
                 ].map((tool) => (
-                  <Badge className="text-xs sm:text-sm md:text-base" key={tool} variant="outline">
+                  <Badge className="text-xs sm:text-sm md:text-base dark:text-neutral-100 text-neutral-800" key={tool} variant="outline">
                     {tool}
                   </Badge>
                 ))}

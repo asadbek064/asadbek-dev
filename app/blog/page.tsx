@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default async function BlogPage() {
     return (
         <section className="space-y-4 p-4 md:p-8">
-            <h1 className="text-4xl font-bold mb-4 animate ease-in">
+            <h1 className="text-4xl font-bold mb-4 animate ease-in text-neutral-800 dark:text-neutral-200">
                 Blog
             </h1>
             <div className={"stagger-child-animations"}>
