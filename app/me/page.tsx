@@ -40,7 +40,7 @@ export default function MePage() {
                     <a
                         rel="noopener noreferrer"
                         target="_blank"
-                        href="https://pub-5e5002a97ed346e5906448c5ab66c50b.r2.dev/Asadbek%20Resume%2008_2025.pdf"
+                        href="https://pub-5e5002a97ed346e5906448c5ab66c50b.r2.dev/Asadbek%20Resume%2010_2025.pdf"
                         className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
                     >
                         <div className="flex items-center">
