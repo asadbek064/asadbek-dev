@@ -16,9 +16,7 @@ export default function MePage() {
                 <div className="w-full border-b border-gray-400"></div>
                 <p>
                     I currently work as a Software Engineer at <a target='_blank' href='https://sheetjs.com'>SheetJS</a>,
-                    where I manage documentation for developer tools, analyze data processing methods, and assist with
-                    troubleshooting and resolving technical issues. Additionally, I am leading the complete development
-                    of&nbsp;
+                    where I'm leading the development of a JavaScript data processing library. I also built&nbsp;
                     <Link href={'/blog/Creating_Mylinx'}>
                         Mylinx
                     </Link>,

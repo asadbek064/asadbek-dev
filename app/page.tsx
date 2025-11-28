@@ -17,34 +17,6 @@ export default async function HomePage() {
           <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
             Software Engineer at SheetJS
           </h3>
-          <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
-            Improving data processing and documentation solutions in the heart
-            of NYC
-          </p>
-          <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg mb-6">
-            <li>Working on R&D, technical documentation, integrations, and customer support.</li>
-            <li>
-              <span className="list-disc">Developed a custom&nbsp;</span>
-              <Link
-                className="underline hover:text-blue-400 ease-in duration-100"
-                href={
-                  "https://git.sheetjs.com/sheetjs/sheetjs/src/branch/master/packages/dta"
-                }
-                target="_blank"
-              >
-                codec
-              </Link>
-              <span>
-                &nbsp;to read and write Stata .DTA files, enabling CSF workbook
-                object generation.
-              </span>
-            </li>
-            <li>
-              Boosted Gitea server performance by 50% through smart caching and
-              solving archive overfill issues.
-            </li>
-            <li>Resolved 50+ critical technical issues, improving system reliability and uptime.</li>
-          </ul>
           <div className="grid grid-cols-2 gap-4">
             <Link href={"https://sheetjs.com/"} target="_blank">
               <Image
@@ -56,6 +28,30 @@ export default async function HomePage() {
               />
             </Link>
           </div>
+          <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg mb-6">
+            <li>Leading the development of a JavaScript data processing library.</li>
+            <li>
+              <span className="list-disc">Built custom&nbsp;</span>
+              <Link
+                className="underline hover:text-blue-400 ease-in duration-100"
+                href={
+                  "https://git.sheetjs.com/sheetjs/sheetjs"
+                }
+                target="_blank"
+              >
+                codec
+              </Link>
+              <span>
+                &nbsp;for reading and writing Stata .dta files, enabling SheetJS to parse statistical datasets.
+              </span>
+            </li>
+            <li>
+              Handle L1-L2 technical support for enterprise customers and triage open source community issues on SheetJS CE
+repository, escalating or resolving bugs and integration problems.
+            </li>
+            <li>Create integration demos that serve as primary sales tools for Fortune 500 client acquisition, shadowing sales calls to
+understand technical requirements.</li>
+          </ul>
         </div>
       ),
     },
@@ -67,18 +63,17 @@ export default async function HomePage() {
             Software Engineer Intern at PieShares Inc
           </h3>
           <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
-            Transforming user experiences and optimizing backend performance
-            remotely
+Implemented smart caching and query optimization for 20% faster load times and improved engagement
           </p>
           <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg mb-6">
             <li>
-              Increased user interactions by 30% with engaging Angular
-              interfaces
+Suggested using ngx-admin instead of building dashboard components from scratch, which the founders approved.
             </li>
             <li>
-              Reduced load times by 15% and increased user retention by 20%
+              Set up an admin dashboard using the ngx-admin template, implementing authentication, MongoDB integration, and initial
+project structure
             </li>
-            <li>Implemented smart caching for 20% faster load times</li>
+            <li>Built financial estimation calculators for the main app to show revenue projections for nonprofit partnerships</li>
           </ul>
         </div>
       ),
