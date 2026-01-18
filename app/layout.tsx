@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   description: 'Software Engineer | Creator of Mylinx.cc ✨ NYC ',
   openGraph: {
     title: 'Asadbek Karimov',
-    description: 'Creator of mylinx.cc 🔗 | Data science in JS? | I am passionate about solving tricky problems, optimizing data workflows, and building powerful data toolkits.',
+    description: 'Creator of mylinx.cc | Data science in JS? | I am passionate about solving tricky problems, optimizing data workflows, and building powerful data toolkits.',
     url: 'https://asadk.dev',
     siteName: 'Asad Karimov',
     images: [
@@ -83,7 +83,7 @@ export default function RootLayout({
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window, document, "clarity", "script", "ne4floxof2"); `}
         </Script>
-        
+
       </head>
 
       <body className="antialiased max-w-4xl mb-20 flex flex-col mx-4 mt-8  lg:mt-32 md:mx-auto lg:mx-auto ">
@@ -100,6 +100,6 @@ export default function RootLayout({
       </body>
     </html>
 
-    
+
   );
 }

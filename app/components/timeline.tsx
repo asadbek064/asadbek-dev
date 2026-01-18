@@ -1,9 +1,5 @@
 "use client";
-import {
-  useScroll,
-  useTransform,
-  motion,
-} from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
@@ -40,15 +36,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       </div>
 
       <div
-        className="w-full font-sans rounded-md bg-white/20 dark:bg-[#111010]/50 backdrop-blur-lg dark:border-white/10"
+        className="relative  w-full font-sans rounded-md bg-white/20 dark:bg-[#111010]/50 backdrop-blur-lg dark:border-white/10"
+        style={{ position: "relative" }}
         ref={containerRef}
       >
-        <div ref={ref} className="relative max-w-7xl mx-auto pb-20 md:px-8">
+        <div className="relative max-w-7xl mx-auto pb-20 md:px-8">
           {data.map((item, index) => (
-            <div
-              key={index}
-              className="relative pt-10 md:pt-20"
-            >
+            <div key={index} className="relative pt-10 md:pt-20">
               {/* Timeline dot */}
               <div className="absolute left-3 md:left-8 top-10 md:top-20 h-10 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center z-10">
                 <div className="h-4 w-4 rounded-full bg-neutral-300 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
@@ -67,7 +61,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </div>
             </div>
           ))}
-          
+
           {/* Timeline line */}
           <div
             style={{

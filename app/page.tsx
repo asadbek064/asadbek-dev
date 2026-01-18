@@ -139,7 +139,7 @@ project structure
                         href="https://bincode.asadk.dev"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group font-semibold hover:text-blue-500 transition-colors flex items-center gap-1 hover:underline"
+                        className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline"
                       >
                         BinCode
                       </a>
@@ -182,7 +182,7 @@ project structure
                     href="https://anitrek.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group font-semibold hover:text-blue-500 transition-colors flex items-center gap-1 hover:underline"
+                    className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline"
                   >
                     Anitrek.com
                   </a>
@@ -229,69 +229,68 @@ project structure
               </ul>
             </CardContent>
           </Card>
-          <Card className="mb-6 transition-shadow duration-250">
-            <CardContent className="p-4">
-              <div className="w-full">
-                <div className="flex items-center justify-between mb-2">
-                  <Link
-                    className="hover:cursor-pointer"
-                    href={"https://marketplace.visualstudio.com/items?itemName=asadbek.sheetjs-demo"}
+        <Card className="mb-6 transition-shadow duration-250">
+          <CardContent className="p-4">
+            <div className="w-full">
+              <div className="flex items-center justify-between mb-2">
+                <Link
+                  className="hover:cursor-pointer"
+                  href="https://marketplace.visualstudio.com/items?itemName=asadbek.sheetjs-demo"
+                  target="_blank"
+                >
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
+                    VSCode Spreadsheet Viewer
+                  </h3>
+                </Link>
+
+                <div className="flex gap-3">
+                  <a
+                    href="https://marketplace.visualstudio.com/items?itemName=asadbek.sheetjs-demo"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors"
                   >
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
-                      VSCode Spreadsheet Viewer
-                    </h3>
-                  </Link>
-                  <div className="flex gap-3">
-                    <a
-                      href="https://marketplace.visualstudio.com/items?itemName=asadbek.sheetjs-demo"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
-                    >
-                      Marketplace
-                    </a>
-                    <a
-                      href="https://git.sheetjs.com/asadbek064/sheetjs-vscode-extension"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
-                    >
-                      Source
-                    </a>
-                  </div>
+                    Marketplace
+                  </a>
+                  <a
+                    href="https://git.sheetjs.com/asadbek064/sheetjs-vscode-extension"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors"
+                  >
+                    Source
+                  </a>
                 </div>
               </div>
-              <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
-                Powered by SheetJS, a powerful VSCode extension that lets you view spreadsheets right in your editor. Works with XLSX, XLS, CSV, ODS and 30+ other formats.
-              </p>
-              <div className="my-4 sm:block hidden">
-                <Image
-                  unoptimized
-                  src="https://git.sheetjs.com/asadbek064/sheetjs-vscode-extension/raw/branch/main/asset/sheetjs-vscode-extension-demo.gif"
-                  alt="VSCode Spreadsheet viewer extension"
-                  width={400}
-                  height={400}
-                  className="rounded-lg object-cover w-full shadow-lg hover:cursor-pointer"
-                />
+            </div>
 
-              </div>
-              <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg mb-4">
-                <li>
-                  <b>Multi-level Caching</b> - Workbook cache prevents redundant parsing of the same files
-                </li>
-                <li>
-                  <b>Smart Loading Strategy</b> - First sheet loads immediately for instant feedback
-                </li>
-                <li>
-                  <b>Responsive Interface</b> - Loading indicators and state persistence across views
-                </li>
-                <li>
-                  <b>Format Support</b> - Works with 30+ spreadsheet formats including XLSX, CSV, ODS
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
+            <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
+              Powered by SheetJS. A VSCode extension for viewing spreadsheet files directly in
+              the editor. Supports XLSX, XLS, CSV, ODS, and 30+ additional formats.
+            </p>
+
+            <div className="my-4 sm:block hidden">
+              <Image
+                unoptimized
+                src="https://git.sheetjs.com/asadbek064/sheetjs-vscode-extension/raw/branch/main/asset/sheetjs-vscode-extension-demo.gif"
+                alt="VSCode Spreadsheet Viewer extension demo"
+                width={400}
+                height={400}
+                className="rounded-lg object-cover w-full shadow-lg hover:cursor-pointer"
+              />
+            </div>
+
+          <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg mb-4">
+            <li>Caches workbooks and sheets to avoid re-parsing files</li>
+            <li>Loads sheets on-demand when switching between them</li>
+            <li>Automatically reloads when files are edited externally</li>
+            <li>Handles very large files (50MB+) using pagination</li>
+            <li>
+              Toggle the viewer per file extension via the command palette or context menu
+            </li>
+          </ul>
+          </CardContent>
+        </Card>
           {/* <Card className="mb-6 transition-shadow duration-250">
             <CardContent className="p-6">
               <div className="flex items-start justify-between">
@@ -343,7 +342,7 @@ project structure
                         href="https://reactallplayer.asadk.dev/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group font-semibold hover:text-blue-500 transition-colors flex items-center gap-1 hover:underline"
+                        className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline"
                       >
                         ReactAllPlayer
                       </a>

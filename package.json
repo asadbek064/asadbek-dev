@@ -7,6 +7,7 @@
     "start": "next start -p 4001"
   },
   "dependencies": {
+    "@emotion/is-prop-valid": "^1.4.0",
     "@headlessui/react": "^1.7.19",
     "@octokit/rest": "^20.1.1",
     "@planetscale/database": "^1.19.0",
