@@ -375,21 +375,21 @@ project structure
                   </p>
                   <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg mb-4">
                     <li>
-                      💪 <b>Accessible</b> – Full support for VTT captions and
+                      <b>Accessible</b>: Full support for VTT captions and
                       screen readers
                     </li>
                     <li>
-                      🔧 <b>Customizable</b> – Design your player with flexible
+                      <b>Customizable</b>: Design your player with flexible
                       markup
                     </li>
                     <li>
-                      📱 <b>Responsive</b> – Adapts seamlessly to any screen size
+                      <b>Responsive</b>: Adapts seamlessly to any screen size
                     </li>
                     <li>
-                      📹 <b>Streaming</b> – Supports hls.js and dash.js playback
+                      <b>Streaming</b>: Supports hls.js and dash.js playback
                     </li>
                     <li>
-                      🔎 <b>Fullscreen</b> – Native fullscreen with "full window"
+                      <b>Fullscreen</b>: Native fullscreen with "full window"
                       fallback
                     </li>
                   </ul>
@@ -453,7 +453,7 @@ project structure
       title: "Skills & Awards",
       content: (
         <div>
-          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4  text-neutral-700 dark:text-neutral-300">
             Technical Proficiencies
           </h3>
           <div className="grid grid-cols-2 gap-4 mb-6">
@@ -476,7 +476,7 @@ project structure
               </div>
             </div>
             <div>
-              <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-2">Frameworks & Tools</h4>
+              <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-2  text-neutral-700 dark:text-neutral-300">Frameworks & Tools</h4>
               <div className="flex flex-wrap gap-2">
                 {[
                   "React",
@@ -495,7 +495,7 @@ project structure
               </div>
             </div>
           </div>
-          <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-4">Awards & Recognitions</h3>
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-4  text-neutral-700 dark:text-neutral-300">Awards & Recognitions</h3>
           <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg mb-4">
             <li><Link href={'https://cdn.sheetjs.com/advisories/CVE-2024-22363'} target="_blank">Acknowledged Contributor for <span className="underline hover:text-blue-400 ease-in duration-100">CVE-2024-22363 (SheetJS CE)</span></Link></li>
           </ul>
