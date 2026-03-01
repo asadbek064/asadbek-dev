@@ -10,7 +10,7 @@ export async function getTweetCount() {
   }
 
   const response = await fetch(
-    `https://api.twitter.com/2/users/by/realAsadbek/leeerob?user.fields=public_metrics`,
+    `https://api.twitter.com/2/users/by/realAsadbek/?user.fields=public_metrics`,
     {
       headers: {
         Authorization: `Bearer ${process.env.TWITTER_API_TOKEN}`,

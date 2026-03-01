@@ -45,7 +45,7 @@ const Footer = ({ }) => {
                 </div>
 
                 <div className="text-neutral-800  dark:text-neutral-200 tracking-wide text-center">
-                    © Copyright 2025 Asadbek Karimov
+                    © 2025–present Asadbek Karimov.
                 </div>
             </div>
         </div>

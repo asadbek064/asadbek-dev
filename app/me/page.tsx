@@ -26,7 +26,7 @@ export default function MePage() {
                 <div className='relative my-12'>
                     <Link href={'https://mylinx.cc/'} target='_blank'><img src="https://mylinx.cc/logo.svg" className='absolute top-4 right-5 w-1/5 md:w-28'/></Link>
                     <div className={'aspect-[16/9] w-full'}>
-                        <iframe className={'overflow-hidden min-h-full'} src="https://mylinx-player.pages.dev?provider=YOUTUBE&amp;id=3IDwtt090cY&amp;autoplay=false&amp;mute=false" allowFullScreen  width="100%" allow="autoplay" picture-in-picture="true" clipboard-write="true" loading="lazy" encrypted-media="true"></iframe>
+                        <iframe className={'overflow-hidden min-h-full'} src="https://mylinx-player.pages.dev?provider=YOUTUBE&amp;id=3IDwtt090cY" allowFullScreen  width="100%" allow="autoplay" picture-in-picture="true" clipboard-write="true" loading="lazy" encrypted-media="true"></iframe>
                     </div>
                 </div>
                 <p className="mb-8">

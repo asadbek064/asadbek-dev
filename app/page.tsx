@@ -14,7 +14,7 @@ export default async function HomePage() {
       title: "2024 - Present",
       content: (
         <div>
-          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
+          <h3 className="text-neutral-800 dark:text-neutral-200 text-lg sm:text-xl md:text-2xl font-semibold mb-2">
             Software Engineer at SheetJS
           </h3>
           <div className="grid grid-cols-2 gap-4">
@@ -59,7 +59,7 @@ understand technical requirements.</li>
       title: "2019 - 2021",
       content: (
         <div>
-          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
+          <h3 className="text-neutral-800 dark:text-neutral-200 text-lg sm:text-xl md:text-2xl font-semibold mb-2">
             Software Engineer Intern at PieShares Inc
           </h3>
           <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
@@ -404,7 +404,7 @@ project structure
       title: "Education",
       content: (
         <div>
-          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">Queens College, CUNY</h3>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-neutral-200">Queens College, CUNY</h3>
           <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
             Bachelor of Arts in Computer Science (Graduated: January 2024)
           </p>
@@ -442,8 +442,8 @@ project structure
               </Badge>
             ))}
           </div>
-          <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-2">Notable Achievements</h4>
-          <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg">
+          <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-2 text-neutral-800 dark:text-neutral-200">Notable Achievements</h4>
+          <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-200 text-sm sm:text-base md:text-lg">
             <li>Dean's List for 4 consecutive semesters</li>
           </ul>
         </div>
@@ -453,12 +453,12 @@ project structure
       title: "Skills & Awards",
       content: (
         <div>
-          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4  text-neutral-700 dark:text-neutral-300">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4  text-neutral-800 dark:text-neutral-200">
             Technical Proficiencies
           </h3>
           <div className="grid grid-cols-2 gap-4 mb-6">
             <div>
-              <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-2">Languages</h4>
+              <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-2 text-neutral-800 dark:text-neutral-200">Languages</h4>
               <div className="flex flex-wrap gap-2">
                 {[
                   "TypeScript",
@@ -476,7 +476,7 @@ project structure
               </div>
             </div>
             <div>
-              <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-2  text-neutral-700 dark:text-neutral-300">Frameworks & Tools</h4>
+              <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-2  text-neutral-700 dark:text-neutral-200">Frameworks & Tools</h4>
               <div className="flex flex-wrap gap-2">
                 {[
                   "React",
