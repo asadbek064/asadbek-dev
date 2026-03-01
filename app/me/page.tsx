@@ -4,6 +4,10 @@
 import {BsLinkedin, BsEnvelopePaper} from 'react-icons/bs';
 import Link from 'next/link';
 import {ArrowIcon, GitHubIcon} from "@/components/icons";
+import dynamic from 'next/dynamic';
+const ReactAllPlayer = dynamic(() => import('react-all-player'), {
+  ssr: false,
+});
 
 export default function MePage() {
     return (
@@ -23,11 +27,11 @@ export default function MePage() {
                     a Linktree-like platform that offers bio pages, URL shorteners, and QR codes.
                 </p>
 
-                <div className='relative my-12'>
-                    <Link href={'https://mylinx.cc/'} target='_blank'><img src="https://mylinx.cc/logo.svg" className='absolute top-4 right-5 w-1/5 md:w-28'/></Link>
-                    <div className={'aspect-[16/9] w-full'}>
-                        <iframe className={'overflow-hidden min-h-full'} src="https://mylinx-player.pages.dev?provider=YOUTUBE&amp;id=3IDwtt090cY" allowFullScreen  width="100%" allow="autoplay" picture-in-picture="true" clipboard-write="true" loading="lazy" encrypted-media="true"></iframe>
-                    </div>
+                <div className=''>
+                    <ReactAllPlayer
+                        sources={[{ file: '3IDwtt090cY', type: 'youtube' }]}
+                        className="w-full h-full"
+                    />
                 </div>
                 <p className="mb-8">
                     Graduate of <a href='https://www.qc.cuny.edu/' target='_blank'>Queens College</a> with a major in Computer Science, proficient in TypeScript, Java,
