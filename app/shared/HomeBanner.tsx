@@ -70,7 +70,7 @@ const HomeBanner = ({}) => {
           infrastructure for the web. Core contributor to &nbsp;
           <Link
             href="https://sheetjs.com/"
-            className="underline hover:text-blue-500 text-[#70E1B2] font-bold transition"
+            className="underline hover:text-blue-500 font-bold transition"
           >
             SheetJS
           </Link>
