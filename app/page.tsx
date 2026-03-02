@@ -7,6 +7,7 @@ import { Badge } from "./components/Badge";
 import { Card, CardContent } from "./components/Card";
 import { allBlogs } from "@/.contentlayer/generated";
 import ReactAllPlayerDemo from "./components/ReactAllPlayerDemo";
+import CloudflareBadge from "./components/CloudflareBadge";
 
 export default async function HomePage() {
   const data = [
@@ -18,13 +19,13 @@ export default async function HomePage() {
             Software Engineer at SheetJS
           </h3>
           <div className="grid grid-cols-2 gap-4">
-            <Link href={"https://sheetjs.com/"} target="_blank">
+            <Link href={"https://sheetjs.com/"} target="_blank" rel="noopener noreferrer">
               <Image
                 src="/images/timeline/shjs-banner.jpeg"
                 alt="Sheetjs logo"
                 width={360}
                 height={240}
-                className="rounded-lg object-cover h-28 w-full shadow-lg"
+                className="rounded-lg object-cover h-28 w-full shadow-lg mb-4"
               />
             </Link>
           </div>
@@ -38,6 +39,7 @@ export default async function HomePage() {
                   "https://git.sheetjs.com/sheetjs/sheetjs"
                 }
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 codec
               </Link>
@@ -90,6 +92,7 @@ project structure
                     className="hover:cursor-pointer"
                     href={"https://mylinx.cc/"}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
                       Mylinx.cc
@@ -122,56 +125,12 @@ project structure
                     className="underline hover:text-blue-400 ease-in duration-100"
                     href={"https://mylinx.cc/features"}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     See for yourself!
                   </Link>
                 </li>
               </ul>
-            </CardContent>
-          </Card>
-          <Card className="mb-6 transition-shadow duration-250">
-            <CardContent className="p-6">
-              <div className="flex items-start justify-between">
-                <div className="w-full">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">
-                      <a
-                        href="https://bincode.asadk.dev"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline"
-                      >
-                        BinCode
-                      </a>
-                    </h3>
-                    <div className="flex gap-3">
-                      <a
-                        href="https://bincode.asadk.dev"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
-                      >
-                        Live
-                      </a>
-                      <a
-                        href="https://github.com/asadbek064/bincode"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
-                      >
-                        Source
-                      </a>
-                    </div>
-                  </div>
-                  <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
-                    Lightweight self-hosted tool for simple, reliable team code sharing without external dependencies.
-                  </p>
-                  <ul className="list-disc list-inside text-neutral-600 dark:text-neutral-300 text-sm sm:text-base md:text-lg">
-                    <li>A Complete Self-Hostable JSFiddle Alternative</li>
-                    <li>No signups just create users manually and they can start committing snippets to share</li>
-                  </ul>
-                </div>
-              </div>
             </CardContent>
           </Card>
           <Card className="mb-6 transition-shadow duration-250">
@@ -210,23 +169,25 @@ project structure
 
               <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
                 Innovative anime platform for content discovery and community
-                engagement.
+                engagement. Attracted 3K+ users and 1.2M searches in 3 months
               </p>
               <ul className="space-y-2 list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg mb-4">
-                <li>Attracted 3K+ users and 1.2M searches in 3 months</li>
                 <li>
-                  🔍 <b>Advanced Search</b> Find anime, manga, voices,
+                  <b>Advanced Search</b> Find anime, manga, voices,
                   characters, and scenes with AI-powered search
                 </li>
                 <li>
-                  📅 <b>Unified Watchlists</b> - Consolidate watchlists across
+                  <b>Unified Watchlists</b> - Consolidate watchlists across
                   multiple providers
                 </li>
                 <li>
-                  💬 <b>Interactive Community</b> - Comment engine with
+                  <b>Interactive Community</b> - Comment engine with
                   reactions, nested replies, and markdown
                 </li>
               </ul>
+              <div>
+                <CloudflareBadge/>
+              </div>
             </CardContent>
           </Card>
         <Card className="mb-6 transition-shadow duration-250">
@@ -237,6 +198,7 @@ project structure
                   className="hover:cursor-pointer"
                   href="https://marketplace.visualstudio.com/items?itemName=asadbek.sheetjs-demo"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline">
                     VSCode Spreadsheet Viewer
@@ -397,6 +359,51 @@ project structure
               </div>
             </CardContent>
           </Card>
+                    <Card className="mb-6 transition-shadow duration-250">
+            <CardContent className="p-6">
+              <div className="flex items-start justify-between">
+                <div className="w-full">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">
+                      <a
+                        href="https://bincode.asadk.dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-neutral-800 dark:text-white ease-in-out duration-200 hover:text-blue-400 hover:underline"
+                      >
+                        BinCode
+                      </a>
+                    </h3>
+                    <div className="flex gap-3">
+                      <a
+                        href="https://bincode.asadk.dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
+                      >
+                        Live
+                      </a>
+                      <a
+                        href="https://github.com/asadbek064/bincode"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-xs sm:text-sm md:text-base text-neutral-600 dark:text-neutral-200 hover:text-blue-500 transition-colors flex items-center gap-1"
+                      >
+                        Source
+                      </a>
+                    </div>
+                  </div>
+                  <p className="text-neutral-800 dark:text-neutral-200 text-sm sm:text-base md:text-lg font-normal mb-4">
+                    Lightweight self-hosted tool for simple, reliable team code sharing without external dependencies.
+                  </p>
+                  <ul className="list-disc list-inside text-neutral-600 dark:text-neutral-300 text-sm sm:text-base md:text-lg">
+                    <li>A Complete Self-Hostable JSFiddle Alternative</li>
+                    <li>No signups just create users manually and they can start committing snippets to share</li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       ),
     },
@@ -409,7 +416,7 @@ project structure
             Bachelor of Arts in Computer Science (Graduated: January 2024)
           </p>
           <div className="grid grid-cols-2 gap-4 mb-6">
-            <Link href={"https://www.qc.cuny.edu/"} target="_blank">
+            <Link href={"https://www.qc.cuny.edu/"} target="_blank" rel="noopener noreferrer">
               <Image
                 src="/images/timeline/qc.webp"
                 alt="Queens College Campus"
@@ -418,7 +425,7 @@ project structure
                 className="rounded-lg object-cover h-28 w-full shadow-lg hover:cursor-pointer"
               />
             </Link>
-            <Link href={"https://www.qc.cuny.edu/"} target="_blank">
+            <Link href={"https://www.qc.cuny.edu/"} target="_blank" rel="noopener noreferrer">
               <Image
                 src="/images/timeline/qc-logo.webp"
                 alt="Graduation Ceremony"
@@ -497,7 +504,7 @@ project structure
           </div>
           <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-4  text-neutral-700 dark:text-neutral-300">Awards & Recognitions</h3>
           <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg mb-4">
-            <li><Link href={'https://cdn.sheetjs.com/advisories/CVE-2024-22363'} target="_blank">Acknowledged Contributor for <span className="underline hover:text-blue-400 ease-in duration-100">CVE-2024-22363 (SheetJS CE)</span></Link></li>
+            <li><Link href={'https://cdn.sheetjs.com/advisories/CVE-2024-22363'} target="_blank" rel="noopener noreferrer">Acknowledged Contributor for <span className="underline hover:text-blue-400 ease-in duration-100">CVE-2024-22363 (SheetJS CE)</span></Link></li>
           </ul>
         </div>
       ),
@@ -506,8 +513,6 @@ project structure
   return (
     <section className="space-y-16">
       <HomeBanner />
-      <div className="flex items-start md:items-center my-8 flex-col md:flex-row"></div>
-
       <div className="flex flex-col my-12">
         <div className="space-y-4">
           <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 text-neutral-800 dark:text-neutral-200 animate ease-in">
@@ -551,7 +556,6 @@ project structure
         <ProjectList projects={projects} /> */}
       </div>
 
-      <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 text-xs sm:text-sm md:text-base text-neutral-500 dark:text-neutral-400"></ul>
     </section>
   );
 }

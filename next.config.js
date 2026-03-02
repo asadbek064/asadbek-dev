@@ -11,7 +11,9 @@ const nextConfig = {
       { hostname: 'cdn.sanity.io' },
       { hostname: 'git.sheetjs.com' },
       { hostname: 'pub-1ee15f86c7e94066bcff56e6e7ce5c02.r2.dev' },
-      { hostname: 'youtube.com' }
+      { hostname: 'youtube.com' },
+      { hostname: 'githubusercontent.com'},
+      { hostname: 'github.com'}
     ],
   },
   experimental: {

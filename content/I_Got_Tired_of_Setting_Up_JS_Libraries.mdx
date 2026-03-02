@@ -1,0 +1,44 @@
+---
+title: 'I Got Tired of Setting Up JS Projects (2026)'
+publishedAt: '2026-03-01'
+summary: 'A zero-opinion, zero-bloat starter for TypeScript libraries that gets you coding in 30 seconds.'
+---
+
+![image](https://repository-images.githubusercontent.com/1138425164/4a77ee44-b260-4ebb-bb68-855ac73d31b1)
+
+Here's a familiar ritual: I have an idea for a TypeScript library. I'm excited to build it. Then I spend 20 minutes
+configuring `tsconfig.json`, wrestling with dual CJS/ESM exports, and wondering why type generation isn't working.
+
+`pnpm create vite` gets me 60% there, but leaves me manually wiring up `vite-plugin-dts` and testing. GitHub template
+repos swing too hard the other way—opinionated lint rules, folder structures I don't want, dependencies I immediately
+delete.
+
+
+So I made exactly what I needed: **[vite-typescript-scaffold](https://github.com/asadbek064/vite-typescript-scaffold)**
+
+
+## What you get
+
+
+| Feature | Why it matters |
+|--------|----------------|
+| **Dual CJS/ESM builds** | Your library works everywhere without configuration headaches |
+| **Automatic type definitions** | `vite-plugin-dts` generates `.d.ts` files on build |
+| **Vitest ready** | Testing works out of the box—no setup required |
+| **One-command init** | `./init.sh <name> <author> <email>` renames everything instantly |
+
+## What's intentionally missing
+
+- No framework lock-in
+- No ESLint/Prettier debates
+- No `src/` vs `lib/` opinions
+- No CI configs you'll override anyway
+
+Clone it, run the init script, start writing code. That's it.
+
+**[-> Use the scaffold](https://github.com/asadbek064/vite-typescript-scaffold)**
+
+```bash
+git clone https://github.com/asadbek064/vite-typescript-scaffold
+cd vite-typescript-scaffold
+```

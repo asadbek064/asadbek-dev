@@ -27,12 +27,9 @@ export default function MePage() {
                     a Linktree-like platform that offers bio pages, URL shorteners, and QR codes.
                 </p>
 
-                <div className=''>
-                    <ReactAllPlayer
-                        sources={[{ file: '3IDwtt090cY', type: 'youtube' }]}
-                        className="w-full h-full"
-                    />
-                </div>
+                <ReactAllPlayer
+                    sources={[{ file: '3IDwtt090cY', type: 'youtube' }]}
+                />
                 <p className="mb-8">
                     Graduate of <a href='https://www.qc.cuny.edu/' target='_blank'>Queens College</a> with a major in Computer Science, proficient in TypeScript, Java,
                     and Python. Passionate about <b>Data Science</b> and enjoy developing <b>data toolkits</b>&nbsp;
