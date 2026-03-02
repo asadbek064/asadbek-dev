@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import Tweet from "@/components/tweet";
+import VideoPlayer from "@/app/components/VideoPlayer";
 
 const CustomLink = (props: any) => {
   const href = props.href;
@@ -103,6 +104,7 @@ const components = {
     Callout,
     ProsCard,
     ConsCard,
+    VideoPlayer,
 };
 
 interface MdxProps {
