@@ -78,6 +78,7 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "ne4floxof2"); `}
         </Script>
 
+      <a rel="me" href="https://mastodon.social/@asabekkarimov">Mastodon</a>
       </head>
 
       <body className="antialiased max-w-4xl mb-20 flex flex-col mx-4 mt-8  lg:mt-32 md:mx-auto lg:mx-auto ">
